@@ -4,4 +4,4 @@
 (require "earthquake-service.rkt")
 (connect-earthquake-service)
 
-(get-earthquakes/json "all" "day")
+(get-earthquakes "all" "day")

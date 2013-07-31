@@ -1,5 +1,5 @@
 from coordinate import Coordinate
-from long import Long
+
 class Earthquake(object):
     """
     Information about a specific earthquake.
@@ -78,7 +78,7 @@ class Earthquake(object):
                     json_data['properties']['alert'],
                     json_data['properties']['status'],
                     json_data['properties']['sig'],
-                    json_data['properties']['id'],
+                    json_data['id'],
                     json_data['properties']['dmin'],
                     json_data['properties']['rms'],
                     json_data['properties']['gap'])

@@ -93,10 +93,10 @@ public class Coordinate {
 	 * @param gson The Gson parser. See <a href='https://code.google.com/p/google-gson/'>https://code.google.com/p/google-gson/</a> for more information.
 	 * @return 
 	 */
-	public  Coordinate(JsonObject json, Gson gson) {
-		this.longitude = json.get("0").getAsDouble();
-		this.latitude = json.get("1").getAsDouble();
-		this.depth = json.get("2").getAsDouble();
+	public  Coordinate(JsonArray json, Gson gson) {
+		this.longitude = json.get(0).getAsDouble();
+		this.latitude = json.get(1).getAsDouble();
+		this.depth = json.get(2).getAsDouble();
 	}
 	
 	/**

@@ -38,9 +38,9 @@ class BoundingBox(object):
         :type json_data: dict
         :returns: BoundingBox
         """
-        return BoundingBox(json_data['0'],
-                    json_data['1'],
-                    json_data['2'],
-                    json_data['0'],
-                    json_data['1'],
-                    json_data['2'])
+        return BoundingBox(json_data[0],
+                    json_data[1],
+                    json_data[2],
+                    json_data[3],
+                    json_data[4],
+                    json_data[5])

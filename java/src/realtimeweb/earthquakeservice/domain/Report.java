@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Arrays;
 
 /**
  * Information about earthquakes matching certain criteria, including the area that they occurred.
@@ -19,7 +20,7 @@ import java.util.List;
 public class Report {
 	
 	
-	private bounding box area;
+	private BoundingBox area;
 	private ArrayList<Earthquake> earthquakes;
 	private String title;
 	
@@ -29,7 +30,7 @@ public class Report {
 	
 	 * @return bounding box
 	 */
-	public bounding box getArea() {
+	public BoundingBox getArea() {
 		return this.area;
 	}
 	
@@ -37,7 +38,7 @@ public class Report {
 	 * 
 	 * @param area A region that contains all the earthquakes.
 	 */
-	public void setArea(bounding box area) {
+	public void setArea(BoundingBox area) {
 		this.area = area;
 	}
 	
@@ -93,8 +94,11 @@ public class Report {
 	 * @return 
 	 */
 	public  Report(JsonObject json, Gson gson) {
-		this.area = new bounding box(json.get("bbox").getAsJsonObject(), gson);
-		this.earthquakes = gson.fromJson(json.get("features").getAsJsonArray(), ArrayList<Earthquake>.class);
+		this.area = new BoundingBox(json.get("bbox").getAsJsonArray(), gson);
+		this.earthquakes = new ArrayList<Earthquake>();
+		for (JsonElement e : json.get("features").getAsJsonArray()) {
+			this.earthquakes.add(new Earthquake(e.getAsJsonObject(), gson));
+		}
 		this.title = json.get("metadata").getAsJsonObject().get("title").getAsString();
 	}
 	
@@ -105,7 +109,7 @@ public class Report {
 	 * @param title A human-readable title that describes this data.
 	 * @return 
 	 */
-	public  Report(bounding box area, ArrayList<Earthquake> earthquakes, String title) {
+	public  Report(BoundingBox area, ArrayList<Earthquake> earthquakes, String title) {
 		this.area = area;
 		this.earthquakes = earthquakes;
 		this.title = title;

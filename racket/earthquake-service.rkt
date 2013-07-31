@@ -47,23 +47,23 @@
 			(hash-ref (hash-ref jdata 'properties) 'alert)
 			(hash-ref (hash-ref jdata 'properties) 'status)
 			(hash-ref (hash-ref jdata 'properties) 'sig)
-			(hash-ref (hash-ref jdata 'properties) 'id)
+			(hash-ref jdata 'id)
 			(hash-ref (hash-ref jdata 'properties) 'dmin)
 			(hash-ref (hash-ref jdata 'properties) 'rms)
 			(hash-ref (hash-ref jdata 'properties) 'gap)))
 
 (define (json->coordinate jdata)
-	(make-coordinate (hash-ref jdata '0)
-			(hash-ref jdata '1)
-			(hash-ref jdata '2)))
+	(make-coordinate (first jdata)
+			(second jdata)
+			(third jdata)))
 
 (define (json->bounding-box jdata)
-	(make-bounding-box (hash-ref jdata '0)
-			(hash-ref jdata '1)
-			(hash-ref jdata '2)
-			(hash-ref jdata '0)
-			(hash-ref jdata '1)
-			(hash-ref jdata '2)))
+	(make-bounding-box (first jdata)
+			(second jdata)
+			(third jdata)
+			(fourth jdata)
+			(fifth jdata)
+			(sixth jdata)))
 
 
 ; Handle connections

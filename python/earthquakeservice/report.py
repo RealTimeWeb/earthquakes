@@ -31,6 +31,6 @@ class Report(object):
         :type json_data: dict
         :returns: Report
         """
-        return Report(bounding box._from_json(json_data['bbox']),
+        return Report(BoundingBox._from_json(json_data['bbox']),
                     map(Earthquake._from_json, json_data['features']),
                     json_data['metadata']['title'])

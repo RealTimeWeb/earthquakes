@@ -29,6 +29,6 @@ class Coordinate(object):
         :type json_data: dict
         :returns: Coordinate
         """
-        return Coordinate(json_data['0'],
-                    json_data['1'],
-                    json_data['2'])
+        return Coordinate(json_data[0],
+                    json_data[1],
+                    json_data[2])

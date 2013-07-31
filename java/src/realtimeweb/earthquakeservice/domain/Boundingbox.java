@@ -147,13 +147,13 @@ public class BoundingBox {
 	 * @param gson The Gson parser. See <a href='https://code.google.com/p/google-gson/'>https://code.google.com/p/google-gson/</a> for more information.
 	 * @return 
 	 */
-	public  BoundingBox(JsonObject json, Gson gson) {
-		this.minimumLongitude = json.get("0").getAsDouble();
-		this.minimumLatitude = json.get("1").getAsDouble();
-		this.minimumDepth = json.get("2").getAsDouble();
-		this.maximumLongitude = json.get("0").getAsDouble();
-		this.maximumLatitude = json.get("1").getAsDouble();
-		this.maximumDepth = json.get("2").getAsDouble();
+	public  BoundingBox(JsonArray json, Gson gson) {
+		this.minimumLongitude = json.get(0).getAsDouble();
+		this.minimumLatitude = json.get(1).getAsDouble();
+		this.minimumDepth = json.get(2).getAsDouble();
+		this.maximumLongitude = json.get(3).getAsDouble();
+		this.maximumLatitude = json.get(4).getAsDouble();
+		this.maximumDepth = json.get(5).getAsDouble();
 	}
 	
 	/**

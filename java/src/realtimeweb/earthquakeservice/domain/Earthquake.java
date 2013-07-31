@@ -19,7 +19,7 @@ import java.util.List;
 public class Earthquake {
 	
 	
-	private coordinate location;
+	private Coordinate location;
 	private double magnitude;
 	private String locationDescription;
 	private long time;
@@ -41,7 +41,7 @@ public class Earthquake {
 	
 	 * @return coordinate
 	 */
-	public coordinate getLocation() {
+	public Coordinate getLocation() {
 		return this.location;
 	}
 	
@@ -49,7 +49,7 @@ public class Earthquake {
 	 * 
 	 * @param location The location of the earthquake.
 	 */
-	public void setLocation(coordinate location) {
+	public void setLocation(Coordinate location) {
 		this.location = location;
 	}
 	
@@ -122,7 +122,7 @@ public class Earthquake {
 	}
 	
 	/**
-	 * The total number of "Felt" reports submitted, or null if the data is not available.
+	 * The total number of "Felt" reports submitted, or -1 if the data is not available.
 	
 	 * @return int
 	 */
@@ -132,14 +132,14 @@ public class Earthquake {
 	
 	/**
 	 * 
-	 * @param feltReports The total number of "Felt" reports submitted, or null if the data is not available.
+	 * @param feltReports The total number of "Felt" reports submitted, or -1 if the data is not available.
 	 */
 	public void setFeltReports(int feltReports) {
 		this.feltReports = feltReports;
 	}
 	
 	/**
-	 * The maximum reported intensity for this earthquake, or null if the data is not available. While typically reported as a roman numeral, intensity is reported here as a decimal number. More information can be found at http://earthquake.usgs.gov/learn/topics/mag_vs_int.php
+	 * The maximum reported intensity for this earthquake, or -1 if the data is not available. While typically reported as a roman numeral, intensity is reported here as a decimal number. More information can be found at http://earthquake.usgs.gov/learn/topics/mag_vs_int.php
 	
 	 * @return double
 	 */
@@ -149,14 +149,14 @@ public class Earthquake {
 	
 	/**
 	 * 
-	 * @param maximumReportedIntensity The maximum reported intensity for this earthquake, or null if the data is not available. While typically reported as a roman numeral, intensity is reported here as a decimal number. More information can be found at http://earthquake.usgs.gov/learn/topics/mag_vs_int.php
+	 * @param maximumReportedIntensity The maximum reported intensity for this earthquake, or -1 if the data is not available. While typically reported as a roman numeral, intensity is reported here as a decimal number. More information can be found at http://earthquake.usgs.gov/learn/topics/mag_vs_int.php
 	 */
 	public void setMaximumReportedIntensity(double maximumReportedIntensity) {
 		this.maximumReportedIntensity = maximumReportedIntensity;
 	}
 	
 	/**
-	 * The maximum estimated instrumental intensity for the event, or null if the data is not available. While typically reported as a roman numeral, intensity is reported here as the decimal equivalent. More information can be found at http://earthquake.usgs.gov/learn/topics/mag_vs_int.php
+	 * The maximum estimated instrumental intensity for the event, or -1 if the data is not available. While typically reported as a roman numeral, intensity is reported here as the decimal equivalent. More information can be found at http://earthquake.usgs.gov/learn/topics/mag_vs_int.php
 	
 	 * @return double
 	 */
@@ -166,14 +166,14 @@ public class Earthquake {
 	
 	/**
 	 * 
-	 * @param maximumEstimatedIntensity The maximum estimated instrumental intensity for the event, or null if the data is not available. While typically reported as a roman numeral, intensity is reported here as the decimal equivalent. More information can be found at http://earthquake.usgs.gov/learn/topics/mag_vs_int.php
+	 * @param maximumEstimatedIntensity The maximum estimated instrumental intensity for the event, or -1 if the data is not available. While typically reported as a roman numeral, intensity is reported here as the decimal equivalent. More information can be found at http://earthquake.usgs.gov/learn/topics/mag_vs_int.php
 	 */
 	public void setMaximumEstimatedIntensity(double maximumEstimatedIntensity) {
 		this.maximumEstimatedIntensity = maximumEstimatedIntensity;
 	}
 	
 	/**
-	 * A color string (one of "green", "yellow", "orange", "red") indicating how dangerous the quake was, or null if the data is not available. More information about this kind of alert is available at http://earthquake.usgs.gov/research/pager/
+	 * A color string (one of "green", "yellow", "orange", "red") indicating how dangerous the quake was, or an empty string ("") if the data is not available. More information about this kind of alert is available at http://earthquake.usgs.gov/research/pager/
 	
 	 * @return String
 	 */
@@ -183,7 +183,7 @@ public class Earthquake {
 	
 	/**
 	 * 
-	 * @param alertLevel A color string (one of "green", "yellow", "orange", "red") indicating how dangerous the quake was, or null if the data is not available. More information about this kind of alert is available at http://earthquake.usgs.gov/research/pager/
+	 * @param alertLevel A color string (one of "green", "yellow", "orange", "red") indicating how dangerous the quake was, or an empty string ("") if the data is not available. More information about this kind of alert is available at http://earthquake.usgs.gov/research/pager/
 	 */
 	public void setAlertLevel(String alertLevel) {
 		this.alertLevel = alertLevel;
@@ -241,7 +241,7 @@ public class Earthquake {
 	}
 	
 	/**
-	 * Horizontal distance from the epicenter to the nearest station (in degrees), or null if the data is not available. 1 degree is approximately 111.2 kilometers. In general, the smaller this number, the more reliable is the calculated depth of the earthquake.
+	 * Horizontal distance from the epicenter to the nearest station (in degrees), or -1 if the data is not available. 1 degree is approximately 111.2 kilometers. In general, the smaller this number, the more reliable is the calculated depth of the earthquake.
 	
 	 * @return double
 	 */
@@ -251,7 +251,7 @@ public class Earthquake {
 	
 	/**
 	 * 
-	 * @param distance Horizontal distance from the epicenter to the nearest station (in degrees), or null if the data is not available. 1 degree is approximately 111.2 kilometers. In general, the smaller this number, the more reliable is the calculated depth of the earthquake.
+	 * @param distance Horizontal distance from the epicenter to the nearest station (in degrees), or -1 if the data is not available. 1 degree is approximately 111.2 kilometers. In general, the smaller this number, the more reliable is the calculated depth of the earthquake.
 	 */
 	public void setDistance(double distance) {
 		this.distance = distance;
@@ -275,7 +275,7 @@ public class Earthquake {
 	}
 	
 	/**
-	 * The largest azimuthal gap between azimuthally adjacent stations (in degrees), or null if the data is not available. In general, the smaller this number, the more reliable is the calculated horizontal position of the earthquake.
+	 * The largest azimuthal gap between azimuthally adjacent stations (in degrees), or -1 if the data is not available. In general, the smaller this number, the more reliable is the calculated horizontal position of the earthquake.
 	
 	 * @return double
 	 */
@@ -285,7 +285,7 @@ public class Earthquake {
 	
 	/**
 	 * 
-	 * @param gap The largest azimuthal gap between azimuthally adjacent stations (in degrees), or null if the data is not available. In general, the smaller this number, the more reliable is the calculated horizontal position of the earthquake.
+	 * @param gap The largest azimuthal gap between azimuthally adjacent stations (in degrees), or -1 if the data is not available. In general, the smaller this number, the more reliable is the calculated horizontal position of the earthquake.
 	 */
 	public void setGap(double gap) {
 		this.gap = gap;
@@ -309,21 +309,50 @@ public class Earthquake {
 	 * @return 
 	 */
 	public  Earthquake(JsonObject json, Gson gson) {
-		this.location = new coordinate(json.get("geometry").getAsJsonObject().get("coordinates").getAsJsonObject(), gson);
-		this.magnitude = json.get("properties").getAsJsonObject().get("mag").getAsDouble();
-		this.locationDescription = json.get("properties").getAsJsonObject().get("place").getAsString();
-		this.time = json.get("properties").getAsJsonObject().get("time").getAsLong();
-		this.url = json.get("properties").getAsJsonObject().get("url").getAsString();
-		this.feltReports = json.get("properties").getAsJsonObject().get("felt").getAsInt();
-		this.maximumReportedIntensity = json.get("properties").getAsJsonObject().get("cdi").getAsDouble();
-		this.maximumEstimatedIntensity = json.get("properties").getAsJsonObject().get("mmi").getAsDouble();
-		this.alertLevel = json.get("properties").getAsJsonObject().get("alert").getAsString();
-		this.eventSource = json.get("properties").getAsJsonObject().get("status").getAsString();
-		this.significance = json.get("properties").getAsJsonObject().get("sig").getAsInt();
-		this.id = json.get("properties").getAsJsonObject().get("id").getAsString();
-		this.distance = json.get("properties").getAsJsonObject().get("dmin").getAsDouble();
-		this.rootMeanSquare = json.get("properties").getAsJsonObject().get("rms").getAsDouble();
-		this.gap = json.get("properties").getAsJsonObject().get("gap").getAsDouble();
+		this.location = new Coordinate(json.get("geometry").getAsJsonObject().get("coordinates").getAsJsonArray(), gson);
+		JsonObject properties = json.get("properties").getAsJsonObject();
+		this.magnitude = properties.get("mag").getAsDouble();
+		this.locationDescription = properties.get("place").getAsString();
+		this.time = properties.get("time").getAsLong();
+		this.url = properties.get("url").getAsString();
+		if (properties.get("felt").isJsonNull()) {
+			this.feltReports = -1;
+		} else {
+			this.feltReports = properties.get("felt").getAsInt();
+		}
+		if (properties.get("cdi").isJsonNull()) {
+			this.maximumReportedIntensity = -1;
+		} else {
+			this.maximumReportedIntensity = properties.get("cdi").getAsDouble();
+		}
+		if (properties.get("mmi").isJsonNull()) {
+			this.maximumEstimatedIntensity = -1;
+		} else {
+			this.maximumEstimatedIntensity = properties.get("mmi").getAsDouble();
+		}
+		if (properties.get("alert").isJsonNull()) {
+			this.alertLevel= "";
+		} else {
+			this.alertLevel = properties.get("alert").getAsString();
+		}
+		this.eventSource = properties.get("status").getAsString();
+		this.significance = properties.get("sig").getAsInt();
+		this.id = json.get("id").getAsString();
+		if (properties.get("dmin").isJsonNull()) {
+			this.distance = -1;
+		} else {
+			this.distance = properties.get("dmin").getAsDouble();
+		}
+		if (properties.get("rms").isJsonNull()) {
+			this.rootMeanSquare = -1;
+		} else {
+			this.rootMeanSquare = properties.get("rms").getAsDouble();
+		}
+		if (properties.get("gap").isJsonNull()) {
+			this.gap= -1;
+		} else {
+			this.gap = properties.get("gap").getAsDouble();
+		}
 	}
 	
 	/**
@@ -345,7 +374,7 @@ public class Earthquake {
 	 * @param gap The largest azimuthal gap between azimuthally adjacent stations (in degrees), or null if the data is not available. In general, the smaller this number, the more reliable is the calculated horizontal position of the earthquake.
 	 * @return 
 	 */
-	public  Earthquake(coordinate location, double magnitude, String locationDescription, long time, String url, int feltReports, double maximumReportedIntensity, double maximumEstimatedIntensity, String alertLevel, String eventSource, int significance, String id, double distance, double rootMeanSquare, double gap) {
+	public  Earthquake(Coordinate location, double magnitude, String locationDescription, long time, String url, int feltReports, double maximumReportedIntensity, double maximumEstimatedIntensity, String alertLevel, String eventSource, int significance, String id, double distance, double rootMeanSquare, double gap) {
 		this.location = location;
 		this.magnitude = magnitude;
 		this.locationDescription = locationDescription;
