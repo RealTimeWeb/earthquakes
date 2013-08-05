@@ -98,7 +98,7 @@ public class EarthquakeService implements AbstractEarthquakeService {
 		    @Override
 		    public void getEarthquakesCompleted(String response) {
 		        JsonParser parser = new JsonParser();
-		JsonObject top = parser.parse(response).getAsJsonObject();
+		        JsonObject top = parser.parse(response).getAsJsonObject();
 		        Report result = new Report(top, gson);
 		        callback.getEarthquakesCompleted(result);
 		    }

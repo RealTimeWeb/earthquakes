@@ -94,10 +94,14 @@ public class Report {
 	 * @return 
 	 */
 	public  Report(JsonObject json, Gson gson) {
-		this.area = new BoundingBox(json.get("bbox").getAsJsonArray(), gson);
 		this.earthquakes = new ArrayList<Earthquake>();
-		for (JsonElement e : json.get("features").getAsJsonArray()) {
-			this.earthquakes.add(new Earthquake(e.getAsJsonObject(), gson));
+		if (json.has("bbox")) {
+			for (JsonElement e : json.get("features").getAsJsonArray()) {
+				this.earthquakes.add(new Earthquake(e.getAsJsonObject(), gson));
+			}
+			this.area = new BoundingBox(json.get("bbox").getAsJsonArray(), gson);
+		} else {
+			this.area = new BoundingBox(0, 0, 0, 0, 0, 0);
 		}
 		this.title = json.get("metadata").getAsJsonObject().get("title").getAsString();
 	}
