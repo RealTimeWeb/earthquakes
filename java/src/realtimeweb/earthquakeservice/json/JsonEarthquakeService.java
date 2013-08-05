@@ -1,6 +1,9 @@
 package realtimeweb.earthquakeservice.json;
 
 import realtimeweb.earthquakeservice.main.AbstractEarthquakeService;
+import realtimeweb.earthquakeservice.main.History;
+import realtimeweb.earthquakeservice.main.Threshold;
+
 import java.util.HashMap;
 import realtimeweb.earthquakeservice.util.Util;
 
@@ -67,11 +70,11 @@ public class JsonEarthquakeService implements AbstractEarthquakeService {
 	
 	/**
 	 * Retrieves information about earthquakes around the world.
-	 * @param threshold A string indicating what kind of earthquakes to report. Must be either "significant" (only significant earthquakes), "all" (all earthquakes, regardless of significance), "4.5", "2.5", or "1.0". Note that for the last three, all earthquakes at and above that level will be reported.
-	 * @param time A string indicating the time range of earthquakes to report. Must be either "hour" (only earthquakes in the past hour), "day" (only earthquakes that happened today), "week" (only earthquakes that happened in the past 7 days), or "month" (only earthquakes that happened in the past 30 days).
+	 * @param threshold What kind of earthquakes to report. Note that this is a minimum - earthquakes at or ABOVE this level will be reported!
+	 * @param time The historical time range of earthquakes to report.
 	 * @return String
 	 */
-	public String getEarthquakes(String threshold, String time) throws Exception {
+	public String getEarthquakes(Threshold threshold, History time) throws Exception {
 		String url = String.format("http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/%s_%s.geojson", String.valueOf(threshold), String.valueOf(time));
 		HashMap<String, String> parameters = new HashMap<String, String>();
 		if (this.local) {
@@ -91,11 +94,11 @@ public class JsonEarthquakeService implements AbstractEarthquakeService {
 	
 	/**
 	 * Retrieves information about earthquakes around the world.
-	 * @param threshold A string indicating what kind of earthquakes to report. Must be either "significant" (only significant earthquakes), "all" (all earthquakes, regardless of significance), "4.5", "2.5", or "1.0". Note that for the last three, all earthquakes at and above that level will be reported.
-	 * @param time A string indicating the time range of earthquakes to report. Must be either "hour" (only earthquakes in the past hour), "day" (only earthquakes that happened today), "week" (only earthquakes that happened in the past 7 days), or "month" (only earthquakes that happened in the past 30 days).
+	 * @param threshold What kind of earthquakes to report. Note that this is a minimum - earthquakes at or ABOVE this level will be reported!
+	 * @param time The historical time range of earthquakes to report.
 	 * @param callback The listener that will be given the data (or error).
 	 */
-	public void getEarthquakes(final String threshold, final String time, final JsonGetEarthquakesListener callback) {
+	public void getEarthquakes(final Threshold threshold, final History time, final JsonGetEarthquakesListener callback) {
 		
 		Thread thread = new Thread() {
 		    @Override

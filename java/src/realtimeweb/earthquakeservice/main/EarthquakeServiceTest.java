@@ -13,7 +13,7 @@ public class EarthquakeServiceTest {
 		JsonEarthquakeService jes = JsonEarthquakeService.getInstance();
 		jes.connect();
 		try {
-			System.out.println(jes.getEarthquakes("all", "hour"));
+			System.out.println(jes.getEarthquakes(Threshold.ALL, History.HOUR));
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -22,7 +22,7 @@ public class EarthquakeServiceTest {
 		StructuredEarthquakeService ses = StructuredEarthquakeService.getInstance();
 		ses.connect();
 		try {
-			System.out.println(ses.getEarthquakes("all", "hour"));
+			System.out.println(ses.getEarthquakes(Threshold.ALL, History.HOUR));
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -31,7 +31,7 @@ public class EarthquakeServiceTest {
 		EarthquakeService res = EarthquakeService.getInstance();
 		res.connect();
 		try {
-			System.out.println(res.getEarthquakes("all", "hour"));
+			System.out.println(res.getEarthquakes(Threshold.ALL, History.HOUR));
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
