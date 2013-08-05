@@ -4,13 +4,8 @@ import realtimeweb.earthquakeservice.main.AbstractEarthquakeService;
 import realtimeweb.earthquakeservice.main.History;
 import realtimeweb.earthquakeservice.main.Threshold;
 import realtimeweb.earthquakeservice.json.JsonEarthquakeService;
-import realtimeweb.earthquakeservice.util.Util;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
+
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import realtimeweb.earthquakeservice.domain.Report;

@@ -3,7 +3,6 @@ package realtimeweb.earthquakeservice.structured;
 import realtimeweb.earthquakeservice.main.AbstractEarthquakeService;
 import realtimeweb.earthquakeservice.main.History;
 import realtimeweb.earthquakeservice.main.Threshold;
-import realtimeweb.earthquakeservice.util.Util;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import com.google.gson.Gson;
@@ -68,6 +67,7 @@ public class StructuredEarthquakeService implements AbstractEarthquakeService {
 	 * @param time The historical time range of earthquakes to report.
 	 * @return HashMap<String, Object>
 	 */
+	@SuppressWarnings("unchecked")
 	public HashMap<String, Object> getEarthquakes(Threshold threshold, History time) throws Exception {
 		return gson.fromJson(jsonInstance.getEarthquakes(threshold, time), LinkedHashMap.class);
 	}
@@ -86,7 +86,8 @@ public class StructuredEarthquakeService implements AbstractEarthquakeService {
 		        callback.getEarthquakesFailed(exception);
 		    }
 		    
-		    @Override
+		    @SuppressWarnings("unchecked")
+			@Override
 		    public void getEarthquakesCompleted(String data) {
 		        callback.getEarthquakesCompleted(gson.fromJson(data, LinkedHashMap.class));
 		    }

@@ -1,8 +1,7 @@
 package realtimeweb.earthquakeservice.structured;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import realtimeweb.earthquakeservice.domain.Report;
+
 /**
  * A listener for the getEarthquakes method. On success, passes the data into the getEarthquakesCompleted method. On failure, passes the exception to the getEarthquakesFailed method.
  */

@@ -1,27 +1,20 @@
 package realtimeweb.earthquakeservice.main;
 
 import java.util.HashMap;
-import java.util.LinkedHashMap;
 
-import realtimeweb.earthquakeservice.domain.Report;
 import realtimeweb.earthquakeservice.json.JsonEarthquakeService;
 import realtimeweb.earthquakeservice.regular.EarthquakeService;
-import realtimeweb.earthquakeservice.regular.GetEarthquakesListener;
 import realtimeweb.earthquakeservice.structured.StructuredEarthquakeService;
 import realtimeweb.earthquakeservice.structured.StructuredGetEarthquakesListener;
 
 public class EarthquakeServiceTest {
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 		JsonEarthquakeService jes = JsonEarthquakeService.getInstance();
 		jes.connect();
 		try {
 			System.out.println(jes.getEarthquakes(Threshold.ALL, History.HOUR));
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
@@ -30,7 +23,6 @@ public class EarthquakeServiceTest {
 		try {
 			System.out.println(ses.getEarthquakes(Threshold.ALL, History.HOUR));
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		System.out.println("\n");
@@ -40,7 +32,6 @@ public class EarthquakeServiceTest {
 		try {
 			System.out.println(res.getEarthquakes(Threshold.ALL, History.HOUR));
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		for (int i = 0; i < 1000; i += 1) {
@@ -48,7 +39,6 @@ public class EarthquakeServiceTest {
 			try {
 				res.getEarthquakes(Threshold.ALL, History.HOUR);
 			} catch (Exception e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 				i = 1001;
 			}
@@ -63,7 +53,7 @@ public class EarthquakeServiceTest {
 			}
 			
 			@Override
-			public void getEarthquakesCompleted(HashMap data) {
+			public void getEarthquakesCompleted(HashMap<String, Object> data) {
 				System.out.println(data);
 			}
 		});

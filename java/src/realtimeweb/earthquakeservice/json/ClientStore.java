@@ -6,7 +6,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashMap;
-import java.util.Map.Entry;
 
 import com.google.gson.Gson;
 
@@ -70,6 +69,7 @@ class ClientStore {
 	 * @param source
 	 * @throws IOException
 	 */
+	@SuppressWarnings("unchecked")
 	public void load(String source) throws IOException {
 		InputStreamReader is = new InputStreamReader(getClass()
 				.getResourceAsStream(source));
