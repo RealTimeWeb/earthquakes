@@ -1,9 +1,13 @@
 package realtimeweb.earthquakeservice.json;
 
+import realtimeweb.earthquakeservice.exceptions.ConnectEarthquakeException;
+import realtimeweb.earthquakeservice.exceptions.EarthquakeException;
+import realtimeweb.earthquakeservice.exceptions.ParseEarthquakeException;
 import realtimeweb.earthquakeservice.main.AbstractEarthquakeService;
 import realtimeweb.earthquakeservice.main.History;
 import realtimeweb.earthquakeservice.main.Threshold;
 
+import java.io.IOException;
 import java.util.HashMap;
 import realtimeweb.earthquakeservice.util.Util;
 
@@ -20,10 +24,25 @@ public class JsonEarthquakeService implements AbstractEarthquakeService {
 	 * @return 
 	 */
 	protected  JsonEarthquakeService() {
-		disconnect();
-		this.clientStore = new ClientStore();
+		connect();
+		try {
+			this.clientStore = new ClientStore();
+		} catch (IOException e) {
+			System.err.println("Couldn't find internal cache! Your Jar might be corrupt.");
+			e.printStackTrace();
+		}
 	}
 	
+	public JsonEarthquakeService(String localFilename) {
+		disconnect();
+		try {
+			this.clientStore = new ClientStore(localFilename);
+		} catch (IOException e) {
+			System.err.println("Couldn't find " + localFilename + ". Make sure the file is in the same folder as your main jar.");
+			e.printStackTrace();
+		}
+	}
+
 	/**
 	 * Retrieves the singleton instance.
 	
@@ -74,7 +93,7 @@ public class JsonEarthquakeService implements AbstractEarthquakeService {
 	 * @param time The historical time range of earthquakes to report.
 	 * @return String
 	 */
-	public String getEarthquakes(Threshold threshold, History time) throws Exception {
+	public String getEarthquakes(Threshold threshold, History time) throws EarthquakeException {
 		String url = String.format("http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/%s_%s.geojson", String.valueOf(threshold), String.valueOf(time));
 		HashMap<String, String> parameters = new HashMap<String, String>();
 		if (this.local) {
@@ -84,11 +103,13 @@ public class JsonEarthquakeService implements AbstractEarthquakeService {
 		try {
 		    jsonResponse = Util.get(url, parameters);
 		    if (jsonResponse.startsWith("<")) {
-		        throw new Exception(jsonResponse);
+		        throw new ParseEarthquakeException(jsonResponse);
 		    }
 		    return jsonResponse;
+		} catch (IOException e) {
+			throw new ConnectEarthquakeException(e.toString());
 		} catch (Exception e) {
-		    throw new Exception(e.toString());
+		    throw new EarthquakeException(e.toString());
 		}
 	}
 	
@@ -112,6 +133,18 @@ public class JsonEarthquakeService implements AbstractEarthquakeService {
 		};
 		thread.start();
 		
+	}
+
+	public static JsonEarthquakeService getInstance(String localFilename) {
+		if (instance == null) {
+			synchronized (JsonEarthquakeService.class) {
+				if (instance == null) {
+					instance = new JsonEarthquakeService(localFilename);
+				}
+			}
+			
+		}
+		return instance;
 	}
 	
 }

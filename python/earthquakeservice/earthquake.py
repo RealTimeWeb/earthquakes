@@ -1,4 +1,5 @@
 from coordinate import Coordinate
+from datetime import datetime
 
 class Earthquake(object):
     """
@@ -45,7 +46,7 @@ class Earthquake(object):
         self.location = location
         self.magnitude = magnitude
         self.location_description = location_description
-        self.time = time
+        self.time = datetime.fromtimestamp(time*0.001)
         self.url = url
         self.felt_reports = felt_reports
         self.maximum_reported_intensity = maximum_reported_intensity
@@ -67,7 +68,7 @@ class Earthquake(object):
         :type json_data: dict
         :returns: Earthquake
         """
-        return Earthquake(coordinate._from_json(json_data['geometry']['coordinates']),
+        return Earthquake(Coordinate._from_json(json_data['geometry']['coordinates']),
                     json_data['properties']['mag'],
                     json_data['properties']['place'],
                     json_data['properties']['time'],

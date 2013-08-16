@@ -8,7 +8,11 @@ import realtimeweb.earthquakeservice.json.JsonEarthquakeService;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.google.gson.JsonSyntaxException;
+
 import realtimeweb.earthquakeservice.domain.Report;
+import realtimeweb.earthquakeservice.exceptions.EarthquakeException;
+import realtimeweb.earthquakeservice.exceptions.ParseEarthquakeException;
 import realtimeweb.earthquakeservice.json.JsonGetEarthquakesListener;
 
 /**
@@ -28,6 +32,11 @@ public class EarthquakeService implements AbstractEarthquakeService {
 		this.gson = new Gson();
 	}
 	
+	public EarthquakeService(String localFilename) {
+		this.jsonInstance = JsonEarthquakeService.getInstance(localFilename);
+		this.gson = new Gson();
+	}
+
 	/**
 	 * Retrieves the singleton instance.
 	
@@ -38,6 +47,23 @@ public class EarthquakeService implements AbstractEarthquakeService {
 			synchronized (EarthquakeService.class) {
 				if (instance == null) {
 					instance = new EarthquakeService();
+				}
+			}
+			
+		}
+		return instance;
+	}
+	
+	/**
+	 * Retrieves the singleton instance.
+	
+	 * @return EarthquakeService
+	 */
+	public static EarthquakeService getInstance(String localFilename) {
+		if (instance == null) {
+			synchronized (EarthquakeService.class) {
+				if (instance == null) {
+					instance = new EarthquakeService(localFilename);
 				}
 			}
 			
@@ -69,10 +95,15 @@ public class EarthquakeService implements AbstractEarthquakeService {
 	 * @param time The historical time range of earthquakes to report.
 	 * @return Report
 	 */
-	public Report getEarthquakes(Threshold threshold, History time) throws Exception {
+	public Report getEarthquakes(Threshold threshold, History time) throws EarthquakeException {
 		String response = jsonInstance.getEarthquakes(threshold,time);
 		JsonParser parser = new JsonParser();
-		JsonObject top = parser.parse(response).getAsJsonObject();
+		JsonObject top = new JsonObject();
+		try {
+			top = parser.parse(response).getAsJsonObject();
+		} catch (JsonSyntaxException e) {
+			throw new ParseEarthquakeException(response);
+		}
 		return new Report(top, gson);
 	}
 	

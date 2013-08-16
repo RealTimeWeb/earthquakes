@@ -384,4 +384,20 @@ public class Earthquake {
 		this.gap = gap;
 	}
 	
+	/**
+	 * Returns the hashcode for this Earthquake, based on its ID
+	 */
+	public int hashCode() {
+		return this.id.hashCode();
+	}
+	
+	/**
+	 * Compares two objects for equality. Two earthquakes are equal if they have the same ID.
+	 */
+	public boolean equals(Object that) {
+		if ( !(that instanceof Earthquake) ) return false; 
+		
+		return this.id.equals(((Earthquake)that).getId());
+	}
+	
 }

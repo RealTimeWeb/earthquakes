@@ -26,15 +26,9 @@ class ClientStore {
 	 * 
 	 * @param source
 	 */
-	public ClientStore(String source) {
+	public ClientStore(String source) throws IOException {
 		jsonData = new HashMap<String, String>();
-		try {
-			this.load(source);
-		} catch (IOException e) {
-			System.err
-			.println("Couldn't find client-side datastore! Your Jar might be corrupt.");
-			e.printStackTrace();
-		}
+		this.load(source);
 	}
 
 	/**
@@ -58,8 +52,9 @@ class ClientStore {
 
 	/**
 	 * Create a client store based on the default store.
+	 * @throws IOException 
 	 */
-	public ClientStore() {
+	public ClientStore() throws IOException {
 		this("../cache.json");
 	}
 
