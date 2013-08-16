@@ -1,4 +1,4 @@
-package realtimeweb.earthquakeservice.main;
+package realtimeweb.earthquakeservice.domain;
 
 /**
  * Note that the threshold indicates the MINIMUM level that earthquakes are

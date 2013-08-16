@@ -1,4 +1,4 @@
-package realtimeweb.earthquakeservice.main;
+package realtimeweb.earthquakeservice.domain;
 
 public enum History {
 	HOUR, DAY, WEEK, MONTH;

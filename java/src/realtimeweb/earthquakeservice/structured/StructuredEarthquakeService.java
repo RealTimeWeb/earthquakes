@@ -1,11 +1,12 @@
 package realtimeweb.earthquakeservice.structured;
 
 import realtimeweb.earthquakeservice.main.AbstractEarthquakeService;
-import realtimeweb.earthquakeservice.main.History;
-import realtimeweb.earthquakeservice.main.Threshold;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import com.google.gson.Gson;
+
+import realtimeweb.earthquakeservice.domain.History;
+import realtimeweb.earthquakeservice.domain.Threshold;
 import realtimeweb.earthquakeservice.json.JsonEarthquakeService;
 import realtimeweb.earthquakeservice.json.JsonGetEarthquakesListener;
 
@@ -23,6 +24,11 @@ public class StructuredEarthquakeService implements AbstractEarthquakeService {
 	 */
 	protected  StructuredEarthquakeService() {
 		this.jsonInstance = JsonEarthquakeService.getInstance();
+		this.gson = new Gson();
+	}
+	
+	protected StructuredEarthquakeService(String localFilename) {
+		this.jsonInstance = JsonEarthquakeService.getInstance(localFilename);
 		this.gson = new Gson();
 	}
 	

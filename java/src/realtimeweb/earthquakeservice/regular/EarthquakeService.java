@@ -1,8 +1,6 @@
 package realtimeweb.earthquakeservice.regular;
 
 import realtimeweb.earthquakeservice.main.AbstractEarthquakeService;
-import realtimeweb.earthquakeservice.main.History;
-import realtimeweb.earthquakeservice.main.Threshold;
 import realtimeweb.earthquakeservice.json.JsonEarthquakeService;
 
 import com.google.gson.Gson;
@@ -10,7 +8,9 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.JsonSyntaxException;
 
+import realtimeweb.earthquakeservice.domain.History;
 import realtimeweb.earthquakeservice.domain.Report;
+import realtimeweb.earthquakeservice.domain.Threshold;
 import realtimeweb.earthquakeservice.exceptions.EarthquakeException;
 import realtimeweb.earthquakeservice.exceptions.ParseEarthquakeException;
 import realtimeweb.earthquakeservice.json.JsonGetEarthquakesListener;
@@ -32,7 +32,7 @@ public class EarthquakeService implements AbstractEarthquakeService {
 		this.gson = new Gson();
 	}
 	
-	public EarthquakeService(String localFilename) {
+	protected EarthquakeService(String localFilename) {
 		this.jsonInstance = JsonEarthquakeService.getInstance(localFilename);
 		this.gson = new Gson();
 	}

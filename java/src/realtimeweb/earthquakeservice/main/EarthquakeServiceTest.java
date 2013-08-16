@@ -2,7 +2,9 @@ package realtimeweb.earthquakeservice.main;
 
 import java.util.HashMap;
 
+import realtimeweb.earthquakeservice.domain.History;
 import realtimeweb.earthquakeservice.domain.Report;
+import realtimeweb.earthquakeservice.domain.Threshold;
 import realtimeweb.earthquakeservice.exceptions.EarthquakeException;
 import realtimeweb.earthquakeservice.json.JsonEarthquakeService;
 import realtimeweb.earthquakeservice.regular.EarthquakeService;
