@@ -97,14 +97,18 @@ public class EarthquakeService implements AbstractEarthquakeService {
 	 */
 	public Report getEarthquakes(Threshold threshold, History time) throws EarthquakeException {
 		String response = jsonInstance.getEarthquakes(threshold,time);
-		JsonParser parser = new JsonParser();
-		JsonObject top = new JsonObject();
-		try {
-			top = parser.parse(response).getAsJsonObject();
-		} catch (JsonSyntaxException e) {
-			throw new ParseEarthquakeException(response);
+		if (response.equals("")) {
+			return Report.makeEmptyReport();
+		} else {
+			JsonParser parser = new JsonParser();
+			JsonObject top = new JsonObject();
+			try {
+				top = parser.parse(response).getAsJsonObject();
+			} catch (JsonSyntaxException e) {
+				throw new ParseEarthquakeException(response);
+			}
+			return new Report(top, gson);
 		}
-		return new Report(top, gson);
 	}
 	
 	/**
@@ -123,10 +127,19 @@ public class EarthquakeService implements AbstractEarthquakeService {
 		    
 		    @Override
 		    public void getEarthquakesCompleted(String response) {
-		        JsonParser parser = new JsonParser();
-		        JsonObject top = parser.parse(response).getAsJsonObject();
-		        Report result = new Report(top, gson);
-		        callback.getEarthquakesCompleted(result);
+		    	if (response.equals("")) {
+		    		callback.getEarthquakesCompleted(Report.makeEmptyReport());
+		    	} else {
+		    		JsonParser parser = new JsonParser();
+		    		JsonObject top = new JsonObject();
+		    		try {
+		    			top = parser.parse(response).getAsJsonObject();
+		    		} catch (JsonSyntaxException e) {
+		    			callback.getEarthquakesFailed(new ParseEarthquakeException(response));
+		    		}
+		    		Report result = new Report(top, gson);
+		    		callback.getEarthquakesCompleted(result);
+		    	}
 		    }
 		});
 		

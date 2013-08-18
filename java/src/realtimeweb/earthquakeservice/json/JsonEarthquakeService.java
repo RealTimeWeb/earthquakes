@@ -9,6 +9,9 @@ import realtimeweb.earthquakeservice.main.AbstractEarthquakeService;
 
 import java.io.IOException;
 import java.util.HashMap;
+
+import com.google.gson.Gson;
+
 import realtimeweb.earthquakeservice.util.Util;
 
 /**
@@ -136,6 +139,53 @@ public class JsonEarthquakeService implements AbstractEarthquakeService {
 	}
 
 	/**
+	 * Retrieves information about earthquakes around the world, and prints both the input URL and the output data.
+	 * 
+	 * @param threshold
+	 *            What kind of earthquakes to report. Note that this is a
+	 *            minimum - earthquakes at or ABOVE this level will be reported!
+	 * @param time
+	 *            The historical time range of earthquakes to report.
+	 * @param recording
+	 *            Whether or not the inputs and outputs should be printed to stdin.
+	 * @return String
+	 */
+	public String getEarthquakes(Threshold threshold, History time, boolean recording)
+			throws EarthquakeException {
+		String url = String
+				.format("http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/%s_%s.geojson",
+						String.valueOf(threshold), String.valueOf(time));
+		HashMap<String, String> parameters = new HashMap<String, String>();
+		// If we're local, hit the client cache
+		String hash = "";
+		if (this.local || recording) {
+			// But first, advance our clock and use it to index the inputs.
+			parameters.put("time", Integer.toString(this.getClock(time, threshold)));
+			this.advanceClock(time, threshold);
+			hash = Util.hashRequest(url, parameters);
+			if (this.local) {
+				return clientStore.getData(hash);
+			}
+		}
+		String jsonResponse = "";
+		try {
+			jsonResponse = Util.get(url, parameters);
+			if (jsonResponse.startsWith("<")) {
+				throw new ParseEarthquakeException(jsonResponse);
+			}
+			if (recording) {
+				return hash + ":" + jsonResponse;
+			} else {
+				return jsonResponse;
+			}
+		} catch (IOException e) {
+			throw new ConnectEarthquakeException(e.toString());
+		} catch (Exception e) {
+			throw new EarthquakeException(e.toString());
+		}
+	}
+	
+	/**
 	 * Retrieves information about earthquakes around the world.
 	 * 
 	 * @param threshold
@@ -145,31 +195,8 @@ public class JsonEarthquakeService implements AbstractEarthquakeService {
 	 *            The historical time range of earthquakes to report.
 	 * @return String
 	 */
-	public String getEarthquakes(Threshold threshold, History time)
-			throws EarthquakeException {
-		String url = String
-				.format("http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/%s_%s.geojson",
-						String.valueOf(threshold), String.valueOf(time));
-		HashMap<String, String> parameters = new HashMap<String, String>();
-		// If we're local, hit the client cache
-		if (this.local) {
-			// But first, advance our clock and use it to index the inputs.
-			this.advanceClock(time, threshold);
-			parameters.put("time", Integer.toString(this.getClock(time, threshold)));
-			return clientStore.getData(Util.hashRequest(url, parameters));
-		}
-		String jsonResponse = "";
-		try {
-			jsonResponse = Util.get(url, parameters);
-			if (jsonResponse.startsWith("<")) {
-				throw new ParseEarthquakeException(jsonResponse);
-			}
-			return jsonResponse;
-		} catch (IOException e) {
-			throw new ConnectEarthquakeException(e.toString());
-		} catch (Exception e) {
-			throw new EarthquakeException(e.toString());
-		}
+	public String getEarthquakes(Threshold threshold, History time) throws EarthquakeException {
+		return getEarthquakes(threshold, time, false);
 	}
 
 	/**

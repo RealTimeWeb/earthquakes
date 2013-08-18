@@ -6,6 +6,8 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 /**
  * Information about earthquakes matching certain criteria, including the area that they occurred.
@@ -92,6 +94,14 @@ public class Report {
 			for (JsonElement e : json.get("features").getAsJsonArray()) {
 				this.earthquakes.add(new Earthquake(e.getAsJsonObject(), gson));
 			}
+			Collections.sort(this.earthquakes, new Comparator<Earthquake>() {
+
+				@Override
+				public int compare(Earthquake e1, Earthquake e2) {
+					return (int) (e1.getTime() - e2.getTime());
+				}
+				
+			});
 			this.area = new BoundingBox(json.get("bbox").getAsJsonArray(), gson);
 		} else {
 			this.area = new BoundingBox(0, 0, 0, 0, 0, 0);
@@ -110,6 +120,12 @@ public class Report {
 		this.area = area;
 		this.earthquakes = earthquakes;
 		this.title = title;
+	}
+	
+	public static Report makeEmptyReport() {
+		return new Report(new BoundingBox(0,0,0,0,0,0),
+						  new ArrayList<Earthquake>(),
+						  "");
 	}
 	
 }

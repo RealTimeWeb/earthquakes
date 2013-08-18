@@ -71,6 +71,7 @@ class ClientStore {
 		BufferedReader clientData = new BufferedReader(is);
 		jsonData = (new Gson()).fromJson(clientData, HashMap.class);
 		clientData.close();
+		System.out.println(jsonData.keySet());
 	}
 
 	public synchronized void save(String source, boolean append)
