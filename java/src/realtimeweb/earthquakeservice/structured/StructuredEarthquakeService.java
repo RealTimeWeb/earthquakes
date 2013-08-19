@@ -1,6 +1,9 @@
 package realtimeweb.earthquakeservice.structured;
 
 import realtimeweb.earthquakeservice.main.AbstractEarthquakeService;
+
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import com.google.gson.Gson;
@@ -27,8 +30,8 @@ public class StructuredEarthquakeService implements AbstractEarthquakeService {
 		this.gson = new Gson();
 	}
 	
-	protected StructuredEarthquakeService(String localFilename) {
-		this.jsonInstance = JsonEarthquakeService.getInstance(localFilename);
+	protected StructuredEarthquakeService(InputStream dataStream) throws IOException {
+		this.jsonInstance = JsonEarthquakeService.getInstance(dataStream);
 		this.gson = new Gson();
 	}
 	

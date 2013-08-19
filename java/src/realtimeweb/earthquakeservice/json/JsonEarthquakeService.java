@@ -8,6 +8,7 @@ import realtimeweb.earthquakeservice.exceptions.ParseEarthquakeException;
 import realtimeweb.earthquakeservice.main.AbstractEarthquakeService;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.HashMap;
 
 import com.google.gson.Gson;
@@ -76,18 +77,10 @@ public class JsonEarthquakeService implements AbstractEarthquakeService {
 		}
 	}
 
-	protected JsonEarthquakeService(String localFilename) {
+	protected JsonEarthquakeService(InputStream localData) throws IOException {
 		disconnect();
 		this.initializeClock();
-		try {
-			this.clientStore = new ClientStore(localFilename);
-		} catch (IOException e) {
-			System.err
-					.println("Couldn't find "
-							+ localFilename
-							+ ". Make sure the file is in the same folder as your main jar.");
-			e.printStackTrace();
-		}
+		this.clientStore = new ClientStore(localData);
 	}
 
 	/**
@@ -228,11 +221,17 @@ public class JsonEarthquakeService implements AbstractEarthquakeService {
 
 	}
 
-	public static JsonEarthquakeService getInstance(String localFilename) {
+	/**
+	 * Retrieves the singleton instance, and if it doesn't exist, sets it to use the given local data stream.
+	 * @param localFile A data stream that will be used instead of live data.
+	 * @return
+	 * @throws IOException 
+	 */
+	public static JsonEarthquakeService getInstance(InputStream localFile) throws IOException {
 		if (instance == null) {
 			synchronized (JsonEarthquakeService.class) {
 				if (instance == null) {
-					instance = new JsonEarthquakeService(localFilename);
+					instance = new JsonEarthquakeService(localFile);
 				}
 			}
 

@@ -11,10 +11,10 @@ public class EarthquakeServiceTest {
 	public static void main(String[] args) {
 		
 		JsonEarthquakeService jes = JsonEarthquakeService.getInstance();
-		jes.disconnect();
+		jes.connect();
 		try {
-			//String quakes = jes.getEarthquakes(Threshold.ALL, History.HOUR);
-			//System.out.println("Quakes:"+quakes);
+			String quakes = jes.getEarthquakes(Threshold.ALL, History.HOUR);
+			System.out.println("Quakes:"+quakes);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

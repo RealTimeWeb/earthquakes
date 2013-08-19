@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.HashMap;
 
@@ -26,9 +27,13 @@ class ClientStore {
 	 * 
 	 * @param source
 	 */
-	public ClientStore(String source) throws IOException {
+	public ClientStore(InputStream  source) throws IOException {
 		jsonData = new HashMap<String, String>();
-		this.load(source);
+		try {
+			this.load(source);
+		} catch (IOException e) {
+			throw new IOException("Couldn't find the local data stream "+source, e);
+		}
 	}
 
 	/**
@@ -55,7 +60,12 @@ class ClientStore {
 	 * @throws IOException 
 	 */
 	public ClientStore() throws IOException {
-		this("../cache.json");
+		jsonData = new HashMap<String, String>();
+		try {
+			this.load(getClass().getClassLoader().getResourceAsStream("cache.json"));
+		} catch (IOException e) {
+			throw new IOException("Couldn't find the built-in data stream.", e);
+		}
 	}
 
 	/**
@@ -65,13 +75,14 @@ class ClientStore {
 	 * @throws IOException
 	 */
 	@SuppressWarnings("unchecked")
-	public void load(String source) throws IOException {
-		InputStreamReader is = new InputStreamReader(getClass()
-				.getResourceAsStream(source));
+	public void load(InputStream source) throws IOException {
+		if (source == null) {
+			throw new IOException("The given InputStream was null; check to make sure that the file exists.");
+		}
+		InputStreamReader is = new InputStreamReader(source);
 		BufferedReader clientData = new BufferedReader(is);
 		jsonData = (new Gson()).fromJson(clientData, HashMap.class);
 		clientData.close();
-		System.out.println(jsonData.keySet());
 	}
 
 	public synchronized void save(String source, boolean append)
