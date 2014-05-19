@@ -17,14 +17,14 @@ class GeocodeException(Exception):
     pass
 
 
-def _iteritems(d):
+def _iteritems(dict):
     """
     Factor-out Py2-to-3 differences in dictionary item iterator methods
     """
     if PYTHON_3:
-        return d.items()
+        return dict.items()
     else:
-        return d.iteritems()
+        return dict.iteritems()
 
 
 def _get(url):
