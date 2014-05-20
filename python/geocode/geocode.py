@@ -2,7 +2,7 @@ from __future__ import print_function
 import sys
 import json
 
-HEADER = {'User-Agent': 'RealTimeWeb Earthquake library for educational purposes'}
+HEADER = {'User-Agent': 'RealTimeWeb Geocode library for educational purposes'}
 PYTHON_3 = sys.version_info >= (3, 0)
 
 if PYTHON_3:
@@ -56,9 +56,28 @@ def _get_coords(json_res):
     """
     location = json_res['results'][0]['geometry']['location']
     lat = location['lat']
-    long = location['lng']
-    coords = {'latitude': lat, 'longitude': long}
+    lon = location['lng']
+    coords = {'latitude': lat, 'longitude': lon}
     return coords
+
+
+def _check_status(json_res):
+    status = json_res['status']
+    if status:
+        if 'ZERO_RESULTS' in status:
+            raise GeocodeException('Sorry no results found')
+        elif not 'OK' in status:
+            raise GeocodeException(json_res['error_message'])
+
+
+def _form_query(params):
+    baseurl = 'https://maps.googleapis.com/maps/api/geocode/json'
+    query = _urlencode(baseurl, params)
+    query = ''.join((query, '&sensor=false'))
+
+    response = _get(query)
+    json_res = json.loads(response)
+    return json_res
 
 
 def code(address):
@@ -70,18 +89,7 @@ def code(address):
 
     params = {'address': address}
 
-    baseurl = 'https://maps.googleapis.com/maps/api/geocode/json'
-    query = _urlencode(baseurl, params)
-    query = ''.join((query, '&sensor=false'))
+    json_res = _form_query(params)
 
-    response = _get(query)
-    json_res = json.loads(response)
-    status = json_res['status']
-
-    if status:
-        if 'ZERO_RESULTS' in status:
-            raise GeocodeException('Sorry no results found')
-        elif not 'OK' in status:
-            raise GeocodeException(json_res['error_message'])
-
+    _check_status(json_res)
     return _get_coords(json_res)
