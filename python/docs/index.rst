@@ -3,48 +3,51 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to earthquake service's documentation!
-=========================================
+Welcome to the Earthquake Service documentation!
+================================================
 
-The Earthquake library offers access to the United States Geological Survey's Earthquake feed. This is international data about earthquakes happening all over. They offer a lot of information, including magnitude and coordinates. You can get information as far back as the past month, or as most recent as the past hour. Note that this data stream has a very high velocity - if you check every five minutes, you'll find it may have already changed.
+The Earthquake library offers access to the United States Geological Survey's Earthquake feed. This is international data about earthquakes happening all over the world. They offer a lot of information, including magnitude and coordinates. You can get information as far back as the past month, or as most recent as the past hour. Note that this data stream has a very high velocity - if you check every five minutes, you'll find it may have already changed.
 
->>> from earthquakes import earthquakes
+>>> import earthquakes
 
 You can get a Report about the latest earthquakes.
 
 >>> report = earthquakes.get_report()
 >>> report
-<Report USGS Significant Earthquakes, Past Hour, 2 Quakes>
+{'title': 'USGS Significant Earthquakes, Past Hour', 
+ 'earthquakes': [], 
+ 'area': {'maximum': {'latitude': 0.0, 'depth': 0.0, 'longitude': 0.0}, 
+          'minimum': {'latitude': 0.0, 'depth': 0.0, 'longitude': 0.0}}}
 
 By default, it only gets the significant earthquakes from the past hour. There are usually not that many significant earthquakes in the world, though.
 
->>> earthquakes.get_report('week', 'all')
-<Report USGS All Earthquakes, Past Week, 1612 Quakes>
+>>> len(earthquakes.get_report('week', 'all')['earthquakes'])
+1612
 >>> report = earthquakes.get_report('hour', '1.0')
->>> report
-<Report USGS Magnitude 1.0+ Earthquakes, Past Hour, 4 Quakes>
+>>> len(report['earthquakes'])
+4
 
 Reports have a title, a list of earthquakes, and a boundary box that fits all the earthquakes.
 
->>> report.title
+>>> report['title']
 'USGS Magnitude 1.0+ Earthquakes, Past Hour'
->>> report.earthquakes
-[<Earthquake nc72216991>, <Earthquake ak11254626>, <Earthquake ak11254622>, <Earthquake ak11254614>]
->>> report.area
-<Box (-151.35, 38.76), (-122.78, 63.12)>
+>>> report['earthquakes']
+[ .. ]
+>>> report['area']
+{'maximum' : ... , 'minimum': ... }
 
 A given earthquake has many properties available.
 
->>> quake = report.earthquakes[0]
+>>> quake = report['earthquakes'][0]
 >>> quake
-<Earthquake nc72216991>
->>> quake.magnitude
+{ ... }
+>>> quake['magnitude']
 1.1
->>> quake.location
-<Coordinate -122.776, 38.761>
->>> quake.location_description
+>>> quake['location']
+{'latitude': ... , 'longitude': ..., 'depth': ...}
+>>> quake['location_description']
 '2km SW of The Geysers, California'
->>> quake.time # epoch time
+>>> quake['time'] # epoch time
 1399423359500
 
 Other fields: alert_level, distance, event_source, felt_reports, gap, id, maximum_estimated_intensity, maximum_reported_intensity, root_mean_square, significance, url.
@@ -59,7 +62,6 @@ or offline:
 
 >>> earthquakes.disconnect()
 >>> earthquakes.get_report('day', 'all')
-<Report USGS All Earthquakes, Past Day, 237 Quakes>
 
 But remember there must be data in the cache already!
 
@@ -68,12 +70,12 @@ earthquakes.earthquakes.USGSException: No data was in the cache for this time an
 
 The cache can be configured to handle repeated calls differently. For example, if you want, you could make it return new results every time you call:
 
->>> earthquakes.get_report('hour', 'all')
-<Report USGS All Earthquakes, Past Day, 9 Quakes>
->>> earthquakes.get_report('hour', 'all')
-<Report USGS All Earthquakes, Past Day, 12 Quakes>
->>> earthquakes.get_report('hour', 'all')
-<Report USGS All Earthquakes, Past Day, 6 Quakes>
+>>> len(earthquakes.get_report('hour', 'all')['earthquakes'])
+9
+>>> len(earthquakes.get_report('hour', 'all')['earthquakes'])
+12
+>>> len(earthquakes.get_report('hour', 'all')['earthquakes'])
+6
 
 Populating the cache
 ^^^^^^^^^^^^^^^^^^^^

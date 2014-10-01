@@ -1,2 +1,0 @@
-class USGSException(Exception):
-    pass
