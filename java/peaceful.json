@@ -1,0 +1,4190 @@
+{"data": {"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?": ["repeat", "{
+  \"bbox\": [
+    -177.9196,
+    -18.5434,
+    570.88,
+    -177.9196,
+    -18.5434,
+    570.88
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -177.9196,
+          -18.5434,
+          570.88
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"usb000j5vl\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": 1,
+        \"code\": \"b000j5vl\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/usb000j5vl.geojson\",
+        \"dmin\": 7.48,
+        \"felt\": 0,
+        \"gap\": 87,
+        \"ids\": \",usb000j5vl,\",
+        \"mag\": 6.542857142857143,
+        \"magType\": \"mb\",
+        \"mmi\": null,
+        \"net\": \"us\",
+        \"nst\": 299,
+        \"place\": \"247km NNE of Ndoi Island, Fiji\",
+        \"rms\": 0.7,
+        \"sig\": 354,
+        \"sources\": \",us,\",
+        \"status\": \"REVIEWED\",
+        \"time\": 1375578000000,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",cap,dyfi,geoserve,nearby-cities,origin,p-wave-travel-times,phase-data,tectonic-summary,\",
+        \"tz\": -720,
+        \"updated\": 1375578000000,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/usb000j5vl\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375578600000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -177.9196,
+    -18.5434,
+    570.88,
+    -177.9196,
+    -18.5434,
+    570.88
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -177.9196,
+          -18.5434,
+          570.88
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"usb000j5vl\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": 1,
+        \"code\": \"b000j5vl\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/usb000j5vl.geojson\",
+        \"dmin\": 7.48,
+        \"felt\": 0,
+        \"gap\": 87,
+        \"ids\": \",usb000j5vl,\",
+        \"mag\": 6.542857142857143,
+        \"magType\": \"mb\",
+        \"mmi\": null,
+        \"net\": \"us\",
+        \"nst\": 299,
+        \"place\": \"247km NNE of Ndoi Island, Fiji\",
+        \"rms\": 0.7,
+        \"sig\": 354,
+        \"sources\": \",us,\",
+        \"status\": \"REVIEWED\",
+        \"time\": 1375578000000,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",cap,dyfi,geoserve,nearby-cities,origin,p-wave-travel-times,phase-data,tectonic-summary,\",
+        \"tz\": -720,
+        \"updated\": 1375578000000,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/usb000j5vl\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375578900000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -177.9196,
+    -18.5434,
+    570.88,
+    -177.9196,
+    -18.5434,
+    570.88
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -177.9196,
+          -18.5434,
+          570.88
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"usb000j5vl\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": 1,
+        \"code\": \"b000j5vl\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/usb000j5vl.geojson\",
+        \"dmin\": 7.48,
+        \"felt\": 0,
+        \"gap\": 87,
+        \"ids\": \",usb000j5vl,\",
+        \"mag\": 6.542857142857143,
+        \"magType\": \"mb\",
+        \"mmi\": null,
+        \"net\": \"us\",
+        \"nst\": 299,
+        \"place\": \"247km NNE of Ndoi Island, Fiji\",
+        \"rms\": 0.7,
+        \"sig\": 354,
+        \"sources\": \",us,\",
+        \"status\": \"REVIEWED\",
+        \"time\": 1375578000000,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",cap,dyfi,geoserve,nearby-cities,origin,p-wave-travel-times,phase-data,tectonic-summary,\",
+        \"tz\": -720,
+        \"updated\": 1375578000000,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/usb000j5vl\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375579200000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -177.9196,
+    -18.5434,
+    570.88,
+    -177.9196,
+    -18.5434,
+    570.88
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -177.9196,
+          -18.5434,
+          570.88
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"usb000j5vl\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": 1,
+        \"code\": \"b000j5vl\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/usb000j5vl.geojson\",
+        \"dmin\": 7.48,
+        \"felt\": 0,
+        \"gap\": 87,
+        \"ids\": \",usb000j5vl,\",
+        \"mag\": 6.542857142857143,
+        \"magType\": \"mb\",
+        \"mmi\": null,
+        \"net\": \"us\",
+        \"nst\": 299,
+        \"place\": \"247km NNE of Ndoi Island, Fiji\",
+        \"rms\": 0.7,
+        \"sig\": 354,
+        \"sources\": \",us,\",
+        \"status\": \"REVIEWED\",
+        \"time\": 1375578000000,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",cap,dyfi,geoserve,nearby-cities,origin,p-wave-travel-times,phase-data,tectonic-summary,\",
+        \"tz\": -720,
+        \"updated\": 1375578000000,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/usb000j5vl\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375579500000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -177.9196,
+    -18.5434,
+    570.88,
+    -177.9196,
+    -18.5434,
+    570.88
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -177.9196,
+          -18.5434,
+          570.88
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"usb000j5vl\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": 1,
+        \"code\": \"b000j5vl\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/usb000j5vl.geojson\",
+        \"dmin\": 7.48,
+        \"felt\": 0,
+        \"gap\": 87,
+        \"ids\": \",usb000j5vl,\",
+        \"mag\": 6.542857142857143,
+        \"magType\": \"mb\",
+        \"mmi\": null,
+        \"net\": \"us\",
+        \"nst\": 299,
+        \"place\": \"247km NNE of Ndoi Island, Fiji\",
+        \"rms\": 0.7,
+        \"sig\": 354,
+        \"sources\": \",us,\",
+        \"status\": \"REVIEWED\",
+        \"time\": 1375578000000,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",cap,dyfi,geoserve,nearby-cities,origin,p-wave-travel-times,phase-data,tectonic-summary,\",
+        \"tz\": -720,
+        \"updated\": 1375578000000,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/usb000j5vl\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375579800000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -177.9196,
+    -18.5434,
+    570.88,
+    -177.9196,
+    -18.5434,
+    570.88
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -177.9196,
+          -18.5434,
+          570.88
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"usb000j5vl\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": 1,
+        \"code\": \"b000j5vl\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/usb000j5vl.geojson\",
+        \"dmin\": 7.48,
+        \"felt\": 0,
+        \"gap\": 87,
+        \"ids\": \",usb000j5vl,\",
+        \"mag\": 6.542857142857143,
+        \"magType\": \"mb\",
+        \"mmi\": null,
+        \"net\": \"us\",
+        \"nst\": 299,
+        \"place\": \"247km NNE of Ndoi Island, Fiji\",
+        \"rms\": 0.7,
+        \"sig\": 354,
+        \"sources\": \",us,\",
+        \"status\": \"REVIEWED\",
+        \"time\": 1375578000000,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",cap,dyfi,geoserve,nearby-cities,origin,p-wave-travel-times,phase-data,tectonic-summary,\",
+        \"tz\": -720,
+        \"updated\": 1375578000000,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/usb000j5vl\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375580100000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -177.9196,
+    -18.5434,
+    570.88,
+    -177.9196,
+    -18.5434,
+    570.88
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -177.9196,
+          -18.5434,
+          570.88
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"usb000j5vl\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": 1,
+        \"code\": \"b000j5vl\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/usb000j5vl.geojson\",
+        \"dmin\": 7.48,
+        \"felt\": 0,
+        \"gap\": 87,
+        \"ids\": \",usb000j5vl,\",
+        \"mag\": 6.542857142857143,
+        \"magType\": \"mb\",
+        \"mmi\": null,
+        \"net\": \"us\",
+        \"nst\": 299,
+        \"place\": \"247km NNE of Ndoi Island, Fiji\",
+        \"rms\": 0.7,
+        \"sig\": 354,
+        \"sources\": \",us,\",
+        \"status\": \"REVIEWED\",
+        \"time\": 1375578000000,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",cap,dyfi,geoserve,nearby-cities,origin,p-wave-travel-times,phase-data,tectonic-summary,\",
+        \"tz\": -720,
+        \"updated\": 1375578000000,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/usb000j5vl\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375580400000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -177.9196,
+    -18.5434,
+    570.88,
+    -177.9196,
+    -18.5434,
+    570.88
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -177.9196,
+          -18.5434,
+          570.88
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"usb000j5vl\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": 1,
+        \"code\": \"b000j5vl\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/usb000j5vl.geojson\",
+        \"dmin\": 7.48,
+        \"felt\": 0,
+        \"gap\": 87,
+        \"ids\": \",usb000j5vl,\",
+        \"mag\": 6.542857142857143,
+        \"magType\": \"mb\",
+        \"mmi\": null,
+        \"net\": \"us\",
+        \"nst\": 299,
+        \"place\": \"247km NNE of Ndoi Island, Fiji\",
+        \"rms\": 0.7,
+        \"sig\": 354,
+        \"sources\": \",us,\",
+        \"status\": \"REVIEWED\",
+        \"time\": 1375578000000,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",cap,dyfi,geoserve,nearby-cities,origin,p-wave-travel-times,phase-data,tectonic-summary,\",
+        \"tz\": -720,
+        \"updated\": 1375578000000,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/usb000j5vl\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375580700000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -177.9196,
+    -18.5434,
+    570.88,
+    -177.9196,
+    -18.5434,
+    570.88
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -177.9196,
+          -18.5434,
+          570.88
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"usb000j5vl\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": 1,
+        \"code\": \"b000j5vl\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/usb000j5vl.geojson\",
+        \"dmin\": 7.48,
+        \"felt\": 0,
+        \"gap\": 87,
+        \"ids\": \",usb000j5vl,\",
+        \"mag\": 6.542857142857143,
+        \"magType\": \"mb\",
+        \"mmi\": null,
+        \"net\": \"us\",
+        \"nst\": 299,
+        \"place\": \"247km NNE of Ndoi Island, Fiji\",
+        \"rms\": 0.7,
+        \"sig\": 354,
+        \"sources\": \",us,\",
+        \"status\": \"REVIEWED\",
+        \"time\": 1375578000000,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",cap,dyfi,geoserve,nearby-cities,origin,p-wave-travel-times,phase-data,tectonic-summary,\",
+        \"tz\": -720,
+        \"updated\": 1375578000000,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/usb000j5vl\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375581000000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -177.9196,
+    -18.5434,
+    570.88,
+    -177.9196,
+    -18.5434,
+    570.88
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -177.9196,
+          -18.5434,
+          570.88
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"usb000j5vl\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": 1,
+        \"code\": \"b000j5vl\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/usb000j5vl.geojson\",
+        \"dmin\": 7.48,
+        \"felt\": 0,
+        \"gap\": 87,
+        \"ids\": \",usb000j5vl,\",
+        \"mag\": 6.542857142857143,
+        \"magType\": \"mb\",
+        \"mmi\": null,
+        \"net\": \"us\",
+        \"nst\": 299,
+        \"place\": \"247km NNE of Ndoi Island, Fiji\",
+        \"rms\": 0.7,
+        \"sig\": 354,
+        \"sources\": \",us,\",
+        \"status\": \"REVIEWED\",
+        \"time\": 1375578000000,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",cap,dyfi,geoserve,nearby-cities,origin,p-wave-travel-times,phase-data,tectonic-summary,\",
+        \"tz\": -720,
+        \"updated\": 1375578000000,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/usb000j5vl\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375581300000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -177.9196,
+    -18.5434,
+    570.88,
+    -177.9196,
+    -18.5434,
+    570.88
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -177.9196,
+          -18.5434,
+          570.88
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"usb000j5vl\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": 1,
+        \"code\": \"b000j5vl\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/usb000j5vl.geojson\",
+        \"dmin\": 7.48,
+        \"felt\": 0,
+        \"gap\": 87,
+        \"ids\": \",usb000j5vl,\",
+        \"mag\": 6.542857142857143,
+        \"magType\": \"mb\",
+        \"mmi\": null,
+        \"net\": \"us\",
+        \"nst\": 299,
+        \"place\": \"247km NNE of Ndoi Island, Fiji\",
+        \"rms\": 0.7,
+        \"sig\": 354,
+        \"sources\": \",us,\",
+        \"status\": \"REVIEWED\",
+        \"time\": 1375578000000,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",cap,dyfi,geoserve,nearby-cities,origin,p-wave-travel-times,phase-data,tectonic-summary,\",
+        \"tz\": -720,
+        \"updated\": 1375578000000,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/usb000j5vl\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375581600000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -141.351,
+    60.0839,
+    34.9,
+    -141.351,
+    60.0839,
+    34.9
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -141.351,
+          60.0839,
+          34.9
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"ak10785028\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"10785028\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ak10785028.geojson\",
+        \"dmin\": 0.1176793,
+        \"felt\": null,
+        \"gap\": 241.2,
+        \"ids\": \",ak10785028,\",
+        \"mag\": 3.628571428571428,
+        \"magType\": \"Ml\",
+        \"mmi\": null,
+        \"net\": \"ak\",
+        \"nst\": 6,
+        \"place\": \"60km E of Cape Yakataga, Alaska\",
+        \"rms\": 1.02,
+        \"sig\": 30,
+        \"sources\": \",ak,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375581600001,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,tectonic-summary,\",
+        \"tz\": -480,
+        \"updated\": 1375581600001,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/ak10785028\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375582200000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -141.351,
+    60.0839,
+    34.9,
+    -141.351,
+    60.0839,
+    34.9
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -141.351,
+          60.0839,
+          34.9
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"ak10785028\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"10785028\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ak10785028.geojson\",
+        \"dmin\": 0.1176793,
+        \"felt\": null,
+        \"gap\": 241.2,
+        \"ids\": \",ak10785028,\",
+        \"mag\": 3.628571428571428,
+        \"magType\": \"Ml\",
+        \"mmi\": null,
+        \"net\": \"ak\",
+        \"nst\": 6,
+        \"place\": \"60km E of Cape Yakataga, Alaska\",
+        \"rms\": 1.02,
+        \"sig\": 30,
+        \"sources\": \",ak,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375581600001,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,tectonic-summary,\",
+        \"tz\": -480,
+        \"updated\": 1375581600001,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/ak10785028\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375582500000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -141.351,
+    60.0839,
+    34.9,
+    -141.351,
+    60.0839,
+    34.9
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -141.351,
+          60.0839,
+          34.9
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"ak10785028\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"10785028\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ak10785028.geojson\",
+        \"dmin\": 0.1176793,
+        \"felt\": null,
+        \"gap\": 241.2,
+        \"ids\": \",ak10785028,\",
+        \"mag\": 3.628571428571428,
+        \"magType\": \"Ml\",
+        \"mmi\": null,
+        \"net\": \"ak\",
+        \"nst\": 6,
+        \"place\": \"60km E of Cape Yakataga, Alaska\",
+        \"rms\": 1.02,
+        \"sig\": 30,
+        \"sources\": \",ak,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375581600001,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,tectonic-summary,\",
+        \"tz\": -480,
+        \"updated\": 1375581600001,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/ak10785028\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375582800000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -141.351,
+    60.0839,
+    34.9,
+    -141.351,
+    60.0839,
+    34.9
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -141.351,
+          60.0839,
+          34.9
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"ak10785028\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"10785028\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ak10785028.geojson\",
+        \"dmin\": 0.1176793,
+        \"felt\": null,
+        \"gap\": 241.2,
+        \"ids\": \",ak10785028,\",
+        \"mag\": 3.628571428571428,
+        \"magType\": \"Ml\",
+        \"mmi\": null,
+        \"net\": \"ak\",
+        \"nst\": 6,
+        \"place\": \"60km E of Cape Yakataga, Alaska\",
+        \"rms\": 1.02,
+        \"sig\": 30,
+        \"sources\": \",ak,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375581600001,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,tectonic-summary,\",
+        \"tz\": -480,
+        \"updated\": 1375581600001,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/ak10785028\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375583100000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -141.351,
+    60.0839,
+    34.9,
+    -141.351,
+    60.0839,
+    34.9
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -141.351,
+          60.0839,
+          34.9
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"ak10785028\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"10785028\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ak10785028.geojson\",
+        \"dmin\": 0.1176793,
+        \"felt\": null,
+        \"gap\": 241.2,
+        \"ids\": \",ak10785028,\",
+        \"mag\": 3.628571428571428,
+        \"magType\": \"Ml\",
+        \"mmi\": null,
+        \"net\": \"ak\",
+        \"nst\": 6,
+        \"place\": \"60km E of Cape Yakataga, Alaska\",
+        \"rms\": 1.02,
+        \"sig\": 30,
+        \"sources\": \",ak,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375581600001,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,tectonic-summary,\",
+        \"tz\": -480,
+        \"updated\": 1375581600001,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/ak10785028\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375583400000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -141.351,
+    60.0839,
+    34.9,
+    -141.351,
+    60.0839,
+    34.9
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -141.351,
+          60.0839,
+          34.9
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"ak10785028\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"10785028\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ak10785028.geojson\",
+        \"dmin\": 0.1176793,
+        \"felt\": null,
+        \"gap\": 241.2,
+        \"ids\": \",ak10785028,\",
+        \"mag\": 3.628571428571428,
+        \"magType\": \"Ml\",
+        \"mmi\": null,
+        \"net\": \"ak\",
+        \"nst\": 6,
+        \"place\": \"60km E of Cape Yakataga, Alaska\",
+        \"rms\": 1.02,
+        \"sig\": 30,
+        \"sources\": \",ak,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375581600001,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,tectonic-summary,\",
+        \"tz\": -480,
+        \"updated\": 1375581600001,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/ak10785028\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375583700000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -141.351,
+    60.0839,
+    34.9,
+    -141.351,
+    60.0839,
+    34.9
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -141.351,
+          60.0839,
+          34.9
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"ak10785028\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"10785028\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ak10785028.geojson\",
+        \"dmin\": 0.1176793,
+        \"felt\": null,
+        \"gap\": 241.2,
+        \"ids\": \",ak10785028,\",
+        \"mag\": 3.628571428571428,
+        \"magType\": \"Ml\",
+        \"mmi\": null,
+        \"net\": \"ak\",
+        \"nst\": 6,
+        \"place\": \"60km E of Cape Yakataga, Alaska\",
+        \"rms\": 1.02,
+        \"sig\": 30,
+        \"sources\": \",ak,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375581600001,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,tectonic-summary,\",
+        \"tz\": -480,
+        \"updated\": 1375581600001,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/ak10785028\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375584000000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -141.351,
+    60.0839,
+    34.9,
+    -141.351,
+    60.0839,
+    34.9
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -141.351,
+          60.0839,
+          34.9
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"ak10785028\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"10785028\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ak10785028.geojson\",
+        \"dmin\": 0.1176793,
+        \"felt\": null,
+        \"gap\": 241.2,
+        \"ids\": \",ak10785028,\",
+        \"mag\": 3.628571428571428,
+        \"magType\": \"Ml\",
+        \"mmi\": null,
+        \"net\": \"ak\",
+        \"nst\": 6,
+        \"place\": \"60km E of Cape Yakataga, Alaska\",
+        \"rms\": 1.02,
+        \"sig\": 30,
+        \"sources\": \",ak,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375581600001,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,tectonic-summary,\",
+        \"tz\": -480,
+        \"updated\": 1375581600001,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/ak10785028\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375584300000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -141.351,
+    60.0839,
+    34.9,
+    -141.351,
+    60.0839,
+    34.9
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -141.351,
+          60.0839,
+          34.9
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"ak10785028\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"10785028\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ak10785028.geojson\",
+        \"dmin\": 0.1176793,
+        \"felt\": null,
+        \"gap\": 241.2,
+        \"ids\": \",ak10785028,\",
+        \"mag\": 3.628571428571428,
+        \"magType\": \"Ml\",
+        \"mmi\": null,
+        \"net\": \"ak\",
+        \"nst\": 6,
+        \"place\": \"60km E of Cape Yakataga, Alaska\",
+        \"rms\": 1.02,
+        \"sig\": 30,
+        \"sources\": \",ak,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375581600001,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,tectonic-summary,\",
+        \"tz\": -480,
+        \"updated\": 1375581600001,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/ak10785028\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375584600000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -141.351,
+    60.0839,
+    34.9,
+    -141.351,
+    60.0839,
+    34.9
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -141.351,
+          60.0839,
+          34.9
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"ak10785028\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"10785028\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ak10785028.geojson\",
+        \"dmin\": 0.1176793,
+        \"felt\": null,
+        \"gap\": 241.2,
+        \"ids\": \",ak10785028,\",
+        \"mag\": 3.628571428571428,
+        \"magType\": \"Ml\",
+        \"mmi\": null,
+        \"net\": \"ak\",
+        \"nst\": 6,
+        \"place\": \"60km E of Cape Yakataga, Alaska\",
+        \"rms\": 1.02,
+        \"sig\": 30,
+        \"sources\": \",ak,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375581600001,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,tectonic-summary,\",
+        \"tz\": -480,
+        \"updated\": 1375581600001,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/ak10785028\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375584900000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -141.351,
+    60.0839,
+    34.9,
+    -141.351,
+    60.0839,
+    34.9
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -141.351,
+          60.0839,
+          34.9
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"ak10785028\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"10785028\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ak10785028.geojson\",
+        \"dmin\": 0.1176793,
+        \"felt\": null,
+        \"gap\": 241.2,
+        \"ids\": \",ak10785028,\",
+        \"mag\": 3.628571428571428,
+        \"magType\": \"Ml\",
+        \"mmi\": null,
+        \"net\": \"ak\",
+        \"nst\": 6,
+        \"place\": \"60km E of Cape Yakataga, Alaska\",
+        \"rms\": 1.02,
+        \"sig\": 30,
+        \"sources\": \",ak,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375581600001,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,tectonic-summary,\",
+        \"tz\": -480,
+        \"updated\": 1375581600001,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/ak10785028\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375585200000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -141.351,
+    60.0839,
+    34.9,
+    -141.351,
+    60.0839,
+    34.9
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -141.351,
+          60.0839,
+          34.9
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"ak10785028\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"10785028\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ak10785028.geojson\",
+        \"dmin\": 0.1176793,
+        \"felt\": null,
+        \"gap\": 241.2,
+        \"ids\": \",ak10785028,\",
+        \"mag\": 3.628571428571428,
+        \"magType\": \"Ml\",
+        \"mmi\": null,
+        \"net\": \"ak\",
+        \"nst\": 6,
+        \"place\": \"60km E of Cape Yakataga, Alaska\",
+        \"rms\": 1.02,
+        \"sig\": 30,
+        \"sources\": \",ak,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375581600001,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,tectonic-summary,\",
+        \"tz\": -480,
+        \"updated\": 1375581600001,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/ak10785028\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375585500000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8055,
+    38.7903,
+    4.3,
+    -122.8055,
+    38.7903,
+    4.3
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8055,
+          38.7903,
+          4.3
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051676\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051676\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051676.geojson\",
+        \"dmin\": 0.01796631,
+        \"felt\": null,
+        \"gap\": 169.2,
+        \"ids\": \",nc72051676,\",
+        \"mag\": 2.9428571428571426,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"4km WNW of The Geysers, California\",
+        \"rms\": 0.07,
+        \"sig\": 6,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375588800002,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375588800002,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051676\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375589400000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8055,
+    38.7903,
+    4.3,
+    -122.8055,
+    38.7903,
+    4.3
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8055,
+          38.7903,
+          4.3
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051676\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051676\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051676.geojson\",
+        \"dmin\": 0.01796631,
+        \"felt\": null,
+        \"gap\": 169.2,
+        \"ids\": \",nc72051676,\",
+        \"mag\": 2.9428571428571426,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"4km WNW of The Geysers, California\",
+        \"rms\": 0.07,
+        \"sig\": 6,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375588800002,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375588800002,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051676\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375589700000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8055,
+    38.7903,
+    4.3,
+    -122.8055,
+    38.7903,
+    4.3
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8055,
+          38.7903,
+          4.3
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051676\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051676\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051676.geojson\",
+        \"dmin\": 0.01796631,
+        \"felt\": null,
+        \"gap\": 169.2,
+        \"ids\": \",nc72051676,\",
+        \"mag\": 2.9428571428571426,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"4km WNW of The Geysers, California\",
+        \"rms\": 0.07,
+        \"sig\": 6,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375588800002,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375588800002,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051676\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375590000000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8055,
+    38.7903,
+    4.3,
+    -122.8055,
+    38.7903,
+    4.3
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8055,
+          38.7903,
+          4.3
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051676\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051676\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051676.geojson\",
+        \"dmin\": 0.01796631,
+        \"felt\": null,
+        \"gap\": 169.2,
+        \"ids\": \",nc72051676,\",
+        \"mag\": 2.9428571428571426,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"4km WNW of The Geysers, California\",
+        \"rms\": 0.07,
+        \"sig\": 6,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375588800002,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375588800002,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051676\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375590300000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8055,
+    38.7903,
+    4.3,
+    -122.8055,
+    38.7903,
+    4.3
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8055,
+          38.7903,
+          4.3
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051676\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051676\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051676.geojson\",
+        \"dmin\": 0.01796631,
+        \"felt\": null,
+        \"gap\": 169.2,
+        \"ids\": \",nc72051676,\",
+        \"mag\": 2.9428571428571426,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"4km WNW of The Geysers, California\",
+        \"rms\": 0.07,
+        \"sig\": 6,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375588800002,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375588800002,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051676\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375590600000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8055,
+    38.7903,
+    4.3,
+    -122.8055,
+    38.7903,
+    4.3
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8055,
+          38.7903,
+          4.3
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051676\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051676\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051676.geojson\",
+        \"dmin\": 0.01796631,
+        \"felt\": null,
+        \"gap\": 169.2,
+        \"ids\": \",nc72051676,\",
+        \"mag\": 2.9428571428571426,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"4km WNW of The Geysers, California\",
+        \"rms\": 0.07,
+        \"sig\": 6,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375588800002,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375588800002,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051676\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375590900000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8055,
+    38.7903,
+    4.3,
+    -122.8055,
+    38.7903,
+    4.3
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8055,
+          38.7903,
+          4.3
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051676\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051676\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051676.geojson\",
+        \"dmin\": 0.01796631,
+        \"felt\": null,
+        \"gap\": 169.2,
+        \"ids\": \",nc72051676,\",
+        \"mag\": 2.9428571428571426,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"4km WNW of The Geysers, California\",
+        \"rms\": 0.07,
+        \"sig\": 6,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375588800002,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375588800002,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051676\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375591200000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8055,
+    38.7903,
+    4.3,
+    -122.8055,
+    38.7903,
+    4.3
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8055,
+          38.7903,
+          4.3
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051676\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051676\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051676.geojson\",
+        \"dmin\": 0.01796631,
+        \"felt\": null,
+        \"gap\": 169.2,
+        \"ids\": \",nc72051676,\",
+        \"mag\": 2.9428571428571426,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"4km WNW of The Geysers, California\",
+        \"rms\": 0.07,
+        \"sig\": 6,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375588800002,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375588800002,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051676\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375591500000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8055,
+    38.7903,
+    4.3,
+    -122.8055,
+    38.7903,
+    4.3
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8055,
+          38.7903,
+          4.3
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051676\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051676\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051676.geojson\",
+        \"dmin\": 0.01796631,
+        \"felt\": null,
+        \"gap\": 169.2,
+        \"ids\": \",nc72051676,\",
+        \"mag\": 2.9428571428571426,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"4km WNW of The Geysers, California\",
+        \"rms\": 0.07,
+        \"sig\": 6,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375588800002,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375588800002,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051676\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375591800000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8055,
+    38.7903,
+    4.3,
+    -122.8055,
+    38.7903,
+    4.3
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8055,
+          38.7903,
+          4.3
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051676\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051676\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051676.geojson\",
+        \"dmin\": 0.01796631,
+        \"felt\": null,
+        \"gap\": 169.2,
+        \"ids\": \",nc72051676,\",
+        \"mag\": 2.9428571428571426,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"4km WNW of The Geysers, California\",
+        \"rms\": 0.07,
+        \"sig\": 6,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375588800002,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375588800002,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051676\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375592100000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8055,
+    38.7903,
+    4.3,
+    -122.8055,
+    38.7903,
+    4.3
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8055,
+          38.7903,
+          4.3
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051676\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051676\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051676.geojson\",
+        \"dmin\": 0.01796631,
+        \"felt\": null,
+        \"gap\": 169.2,
+        \"ids\": \",nc72051676,\",
+        \"mag\": 2.9428571428571426,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"4km WNW of The Geysers, California\",
+        \"rms\": 0.07,
+        \"sig\": 6,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375588800002,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375588800002,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051676\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375592400000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8055,
+    38.7903,
+    4.3,
+    -122.8055,
+    38.7903,
+    4.3
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8055,
+          38.7903,
+          4.3
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051676\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051676\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051676.geojson\",
+        \"dmin\": 0.01796631,
+        \"felt\": null,
+        \"gap\": 169.2,
+        \"ids\": \",nc72051676,\",
+        \"mag\": 2.9428571428571426,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"4km WNW of The Geysers, California\",
+        \"rms\": 0.07,
+        \"sig\": 6,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375588800002,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375588800002,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051676\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375592700000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -116.251,
+    32.8902,
+    6.8,
+    -116.251,
+    32.8902,
+    6.8
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -116.251,
+          32.8902,
+          6.8
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"ci15393153\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"15393153\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ci15393153.geojson\",
+        \"dmin\": 0.02694946,
+        \"felt\": null,
+        \"gap\": 154.8,
+        \"ids\": \",ci15393153,\",
+        \"mag\": 3.714285714285714,
+        \"magType\": \"Ml\",
+        \"mmi\": null,
+        \"net\": \"ci\",
+        \"nst\": 14,
+        \"place\": \"27km ENE of Pine Valley, California\",
+        \"rms\": 0.45,
+        \"sig\": 35,
+        \"sources\": \",ci,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375592400003,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375592400003,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/ci15393153\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375593000000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -116.251,
+    32.8902,
+    6.8,
+    -116.251,
+    32.8902,
+    6.8
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -116.251,
+          32.8902,
+          6.8
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"ci15393153\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"15393153\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ci15393153.geojson\",
+        \"dmin\": 0.02694946,
+        \"felt\": null,
+        \"gap\": 154.8,
+        \"ids\": \",ci15393153,\",
+        \"mag\": 3.714285714285714,
+        \"magType\": \"Ml\",
+        \"mmi\": null,
+        \"net\": \"ci\",
+        \"nst\": 14,
+        \"place\": \"27km ENE of Pine Valley, California\",
+        \"rms\": 0.45,
+        \"sig\": 35,
+        \"sources\": \",ci,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375592400003,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375592400003,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/ci15393153\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375593300000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -116.251,
+    32.8902,
+    6.8,
+    -116.251,
+    32.8902,
+    6.8
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -116.251,
+          32.8902,
+          6.8
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"ci15393153\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"15393153\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ci15393153.geojson\",
+        \"dmin\": 0.02694946,
+        \"felt\": null,
+        \"gap\": 154.8,
+        \"ids\": \",ci15393153,\",
+        \"mag\": 3.714285714285714,
+        \"magType\": \"Ml\",
+        \"mmi\": null,
+        \"net\": \"ci\",
+        \"nst\": 14,
+        \"place\": \"27km ENE of Pine Valley, California\",
+        \"rms\": 0.45,
+        \"sig\": 35,
+        \"sources\": \",ci,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375592400003,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375592400003,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/ci15393153\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375593600000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -116.251,
+    32.8902,
+    6.8,
+    -116.251,
+    32.8902,
+    6.8
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -116.251,
+          32.8902,
+          6.8
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"ci15393153\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"15393153\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ci15393153.geojson\",
+        \"dmin\": 0.02694946,
+        \"felt\": null,
+        \"gap\": 154.8,
+        \"ids\": \",ci15393153,\",
+        \"mag\": 3.714285714285714,
+        \"magType\": \"Ml\",
+        \"mmi\": null,
+        \"net\": \"ci\",
+        \"nst\": 14,
+        \"place\": \"27km ENE of Pine Valley, California\",
+        \"rms\": 0.45,
+        \"sig\": 35,
+        \"sources\": \",ci,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375592400003,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375592400003,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/ci15393153\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375593900000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -116.251,
+    32.8902,
+    6.8,
+    -116.251,
+    32.8902,
+    6.8
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -116.251,
+          32.8902,
+          6.8
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"ci15393153\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"15393153\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ci15393153.geojson\",
+        \"dmin\": 0.02694946,
+        \"felt\": null,
+        \"gap\": 154.8,
+        \"ids\": \",ci15393153,\",
+        \"mag\": 3.714285714285714,
+        \"magType\": \"Ml\",
+        \"mmi\": null,
+        \"net\": \"ci\",
+        \"nst\": 14,
+        \"place\": \"27km ENE of Pine Valley, California\",
+        \"rms\": 0.45,
+        \"sig\": 35,
+        \"sources\": \",ci,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375592400003,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375592400003,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/ci15393153\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375594200000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -116.251,
+    32.8902,
+    6.8,
+    -116.251,
+    32.8902,
+    6.8
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -116.251,
+          32.8902,
+          6.8
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"ci15393153\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"15393153\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ci15393153.geojson\",
+        \"dmin\": 0.02694946,
+        \"felt\": null,
+        \"gap\": 154.8,
+        \"ids\": \",ci15393153,\",
+        \"mag\": 3.714285714285714,
+        \"magType\": \"Ml\",
+        \"mmi\": null,
+        \"net\": \"ci\",
+        \"nst\": 14,
+        \"place\": \"27km ENE of Pine Valley, California\",
+        \"rms\": 0.45,
+        \"sig\": 35,
+        \"sources\": \",ci,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375592400003,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375592400003,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/ci15393153\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375594500000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -116.251,
+    32.8902,
+    6.8,
+    -116.251,
+    32.8902,
+    6.8
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -116.251,
+          32.8902,
+          6.8
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"ci15393153\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"15393153\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ci15393153.geojson\",
+        \"dmin\": 0.02694946,
+        \"felt\": null,
+        \"gap\": 154.8,
+        \"ids\": \",ci15393153,\",
+        \"mag\": 3.714285714285714,
+        \"magType\": \"Ml\",
+        \"mmi\": null,
+        \"net\": \"ci\",
+        \"nst\": 14,
+        \"place\": \"27km ENE of Pine Valley, California\",
+        \"rms\": 0.45,
+        \"sig\": 35,
+        \"sources\": \",ci,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375592400003,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375592400003,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/ci15393153\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375594800000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -116.251,
+    32.8902,
+    6.8,
+    -116.251,
+    32.8902,
+    6.8
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -116.251,
+          32.8902,
+          6.8
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"ci15393153\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"15393153\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ci15393153.geojson\",
+        \"dmin\": 0.02694946,
+        \"felt\": null,
+        \"gap\": 154.8,
+        \"ids\": \",ci15393153,\",
+        \"mag\": 3.714285714285714,
+        \"magType\": \"Ml\",
+        \"mmi\": null,
+        \"net\": \"ci\",
+        \"nst\": 14,
+        \"place\": \"27km ENE of Pine Valley, California\",
+        \"rms\": 0.45,
+        \"sig\": 35,
+        \"sources\": \",ci,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375592400003,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375592400003,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/ci15393153\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375595100000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -116.251,
+    32.8902,
+    6.8,
+    -116.251,
+    32.8902,
+    6.8
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -116.251,
+          32.8902,
+          6.8
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"ci15393153\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"15393153\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ci15393153.geojson\",
+        \"dmin\": 0.02694946,
+        \"felt\": null,
+        \"gap\": 154.8,
+        \"ids\": \",ci15393153,\",
+        \"mag\": 3.714285714285714,
+        \"magType\": \"Ml\",
+        \"mmi\": null,
+        \"net\": \"ci\",
+        \"nst\": 14,
+        \"place\": \"27km ENE of Pine Valley, California\",
+        \"rms\": 0.45,
+        \"sig\": 35,
+        \"sources\": \",ci,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375592400003,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375592400003,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/ci15393153\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375595400000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -116.251,
+    32.8902,
+    6.8,
+    -116.251,
+    32.8902,
+    6.8
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -116.251,
+          32.8902,
+          6.8
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"ci15393153\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"15393153\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ci15393153.geojson\",
+        \"dmin\": 0.02694946,
+        \"felt\": null,
+        \"gap\": 154.8,
+        \"ids\": \",ci15393153,\",
+        \"mag\": 3.714285714285714,
+        \"magType\": \"Ml\",
+        \"mmi\": null,
+        \"net\": \"ci\",
+        \"nst\": 14,
+        \"place\": \"27km ENE of Pine Valley, California\",
+        \"rms\": 0.45,
+        \"sig\": 35,
+        \"sources\": \",ci,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375592400003,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375592400003,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/ci15393153\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375595700000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -116.251,
+    32.8902,
+    6.8,
+    -116.251,
+    32.8902,
+    6.8
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -116.251,
+          32.8902,
+          6.8
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"ci15393153\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"15393153\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ci15393153.geojson\",
+        \"dmin\": 0.02694946,
+        \"felt\": null,
+        \"gap\": 154.8,
+        \"ids\": \",ci15393153,\",
+        \"mag\": 3.714285714285714,
+        \"magType\": \"Ml\",
+        \"mmi\": null,
+        \"net\": \"ci\",
+        \"nst\": 14,
+        \"place\": \"27km ENE of Pine Valley, California\",
+        \"rms\": 0.45,
+        \"sig\": 35,
+        \"sources\": \",ci,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375592400003,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375592400003,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/ci15393153\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375596000000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -116.251,
+    32.8902,
+    6.8,
+    -116.251,
+    32.8902,
+    6.8
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -116.251,
+          32.8902,
+          6.8
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"ci15393153\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"15393153\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ci15393153.geojson\",
+        \"dmin\": 0.02694946,
+        \"felt\": null,
+        \"gap\": 154.8,
+        \"ids\": \",ci15393153,\",
+        \"mag\": 3.714285714285714,
+        \"magType\": \"Ml\",
+        \"mmi\": null,
+        \"net\": \"ci\",
+        \"nst\": 14,
+        \"place\": \"27km ENE of Pine Valley, California\",
+        \"rms\": 0.45,
+        \"sig\": 35,
+        \"sources\": \",ci,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375592400003,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375592400003,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/ci15393153\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375596300000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8203,
+    38.8128,
+    3.5,
+    -122.8203,
+    38.8128,
+    3.5
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8203,
+          38.8128,
+          3.5
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051666\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051666\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051666.geojson\",
+        \"dmin\": 0.00898315,
+        \"felt\": null,
+        \"gap\": 90,
+        \"ids\": \",nc72051666,\",
+        \"mag\": 2.7714285714285714,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"6km NW of The Geysers, California\",
+        \"rms\": 0.06,
+        \"sig\": 2,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375596000005,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375596000005,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051666\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375596600000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8203,
+    38.8128,
+    3.5,
+    -122.8203,
+    38.8128,
+    3.5
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8203,
+          38.8128,
+          3.5
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051666\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051666\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051666.geojson\",
+        \"dmin\": 0.00898315,
+        \"felt\": null,
+        \"gap\": 90,
+        \"ids\": \",nc72051666,\",
+        \"mag\": 2.7714285714285714,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"6km NW of The Geysers, California\",
+        \"rms\": 0.06,
+        \"sig\": 2,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375596000005,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375596000005,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051666\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375596900000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8203,
+    38.8128,
+    3.5,
+    -122.8203,
+    38.8128,
+    3.5
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8203,
+          38.8128,
+          3.5
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051666\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051666\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051666.geojson\",
+        \"dmin\": 0.00898315,
+        \"felt\": null,
+        \"gap\": 90,
+        \"ids\": \",nc72051666,\",
+        \"mag\": 2.7714285714285714,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"6km NW of The Geysers, California\",
+        \"rms\": 0.06,
+        \"sig\": 2,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375596000005,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375596000005,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051666\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375597200000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8203,
+    38.8128,
+    3.5,
+    -122.8203,
+    38.8128,
+    3.5
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8203,
+          38.8128,
+          3.5
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051666\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051666\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051666.geojson\",
+        \"dmin\": 0.00898315,
+        \"felt\": null,
+        \"gap\": 90,
+        \"ids\": \",nc72051666,\",
+        \"mag\": 2.7714285714285714,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"6km NW of The Geysers, California\",
+        \"rms\": 0.06,
+        \"sig\": 2,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375596000005,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375596000005,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051666\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375597500000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8203,
+    38.8128,
+    3.5,
+    -122.8203,
+    38.8128,
+    3.5
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8203,
+          38.8128,
+          3.5
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051666\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051666\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051666.geojson\",
+        \"dmin\": 0.00898315,
+        \"felt\": null,
+        \"gap\": 90,
+        \"ids\": \",nc72051666,\",
+        \"mag\": 2.7714285714285714,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"6km NW of The Geysers, California\",
+        \"rms\": 0.06,
+        \"sig\": 2,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375596000005,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375596000005,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051666\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375597800000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8203,
+    38.8128,
+    3.5,
+    -122.8203,
+    38.8128,
+    3.5
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8203,
+          38.8128,
+          3.5
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051666\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051666\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051666.geojson\",
+        \"dmin\": 0.00898315,
+        \"felt\": null,
+        \"gap\": 90,
+        \"ids\": \",nc72051666,\",
+        \"mag\": 2.7714285714285714,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"6km NW of The Geysers, California\",
+        \"rms\": 0.06,
+        \"sig\": 2,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375596000005,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375596000005,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051666\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375598100000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8203,
+    38.8128,
+    3.5,
+    -122.8203,
+    38.8128,
+    3.5
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8203,
+          38.8128,
+          3.5
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051666\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051666\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051666.geojson\",
+        \"dmin\": 0.00898315,
+        \"felt\": null,
+        \"gap\": 90,
+        \"ids\": \",nc72051666,\",
+        \"mag\": 2.7714285714285714,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"6km NW of The Geysers, California\",
+        \"rms\": 0.06,
+        \"sig\": 2,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375596000005,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375596000005,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051666\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375598400000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8203,
+    38.8128,
+    3.5,
+    -122.8203,
+    38.8128,
+    3.5
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8203,
+          38.8128,
+          3.5
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051666\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051666\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051666.geojson\",
+        \"dmin\": 0.00898315,
+        \"felt\": null,
+        \"gap\": 90,
+        \"ids\": \",nc72051666,\",
+        \"mag\": 2.7714285714285714,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"6km NW of The Geysers, California\",
+        \"rms\": 0.06,
+        \"sig\": 2,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375596000005,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375596000005,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051666\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375598700000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8203,
+    38.8128,
+    3.5,
+    -122.8203,
+    38.8128,
+    3.5
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8203,
+          38.8128,
+          3.5
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051666\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051666\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051666.geojson\",
+        \"dmin\": 0.00898315,
+        \"felt\": null,
+        \"gap\": 90,
+        \"ids\": \",nc72051666,\",
+        \"mag\": 2.7714285714285714,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"6km NW of The Geysers, California\",
+        \"rms\": 0.06,
+        \"sig\": 2,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375596000005,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375596000005,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051666\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375599000000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8203,
+    38.8128,
+    3.5,
+    -122.8203,
+    38.8128,
+    3.5
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8203,
+          38.8128,
+          3.5
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051666\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051666\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051666.geojson\",
+        \"dmin\": 0.00898315,
+        \"felt\": null,
+        \"gap\": 90,
+        \"ids\": \",nc72051666,\",
+        \"mag\": 2.7714285714285714,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"6km NW of The Geysers, California\",
+        \"rms\": 0.06,
+        \"sig\": 2,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375596000005,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375596000005,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051666\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375599300000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8203,
+    38.8128,
+    3.5,
+    -122.8203,
+    38.8128,
+    3.5
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8203,
+          38.8128,
+          3.5
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051666\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051666\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051666.geojson\",
+        \"dmin\": 0.00898315,
+        \"felt\": null,
+        \"gap\": 90,
+        \"ids\": \",nc72051666,\",
+        \"mag\": 2.7714285714285714,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"6km NW of The Geysers, California\",
+        \"rms\": 0.06,
+        \"sig\": 2,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375596000005,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375596000005,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051666\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375599600000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8203,
+    38.8128,
+    3.5,
+    -122.8203,
+    38.8128,
+    3.5
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8203,
+          38.8128,
+          3.5
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051666\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051666\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051666.geojson\",
+        \"dmin\": 0.00898315,
+        \"felt\": null,
+        \"gap\": 90,
+        \"ids\": \",nc72051666,\",
+        \"mag\": 2.7714285714285714,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"6km NW of The Geysers, California\",
+        \"rms\": 0.06,
+        \"sig\": 2,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375596000005,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375596000005,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051666\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375599900000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8747,
+    38.8355,
+    3.2,
+    -122.8747,
+    38.8355,
+    3.2
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8747,
+          38.8355,
+          3.2
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051661\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051661\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051661.geojson\",
+        \"dmin\": 0.00898315,
+        \"felt\": null,
+        \"gap\": 118.8,
+        \"ids\": \",nc72051661,\",
+        \"mag\": 3.371428571428571,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"12km ENE of Cloverdale, California\",
+        \"rms\": 0.05,
+        \"sig\": 19,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375605000001,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375605000001,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051661\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375605600000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8747,
+    38.8355,
+    3.2,
+    -122.8747,
+    38.8355,
+    3.2
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8747,
+          38.8355,
+          3.2
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051661\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051661\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051661.geojson\",
+        \"dmin\": 0.00898315,
+        \"felt\": null,
+        \"gap\": 118.8,
+        \"ids\": \",nc72051661,\",
+        \"mag\": 3.371428571428571,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"12km ENE of Cloverdale, California\",
+        \"rms\": 0.05,
+        \"sig\": 19,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375605000001,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375605000001,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051661\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375605900000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8747,
+    38.8355,
+    3.2,
+    -122.8747,
+    38.8355,
+    3.2
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8747,
+          38.8355,
+          3.2
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051661\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051661\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051661.geojson\",
+        \"dmin\": 0.00898315,
+        \"felt\": null,
+        \"gap\": 118.8,
+        \"ids\": \",nc72051661,\",
+        \"mag\": 3.371428571428571,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"12km ENE of Cloverdale, California\",
+        \"rms\": 0.05,
+        \"sig\": 19,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375605000001,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375605000001,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051661\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375606200000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8747,
+    38.8355,
+    3.2,
+    -122.8747,
+    38.8355,
+    3.2
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8747,
+          38.8355,
+          3.2
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051661\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051661\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051661.geojson\",
+        \"dmin\": 0.00898315,
+        \"felt\": null,
+        \"gap\": 118.8,
+        \"ids\": \",nc72051661,\",
+        \"mag\": 3.371428571428571,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"12km ENE of Cloverdale, California\",
+        \"rms\": 0.05,
+        \"sig\": 19,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375605000001,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375605000001,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051661\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375606500000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8747,
+    38.8355,
+    3.2,
+    -122.8747,
+    38.8355,
+    3.2
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8747,
+          38.8355,
+          3.2
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051661\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051661\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051661.geojson\",
+        \"dmin\": 0.00898315,
+        \"felt\": null,
+        \"gap\": 118.8,
+        \"ids\": \",nc72051661,\",
+        \"mag\": 3.371428571428571,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"12km ENE of Cloverdale, California\",
+        \"rms\": 0.05,
+        \"sig\": 19,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375605000001,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375605000001,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051661\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375606800000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8747,
+    38.8355,
+    3.2,
+    -122.8747,
+    38.8355,
+    3.2
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8747,
+          38.8355,
+          3.2
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051661\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051661\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051661.geojson\",
+        \"dmin\": 0.00898315,
+        \"felt\": null,
+        \"gap\": 118.8,
+        \"ids\": \",nc72051661,\",
+        \"mag\": 3.371428571428571,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"12km ENE of Cloverdale, California\",
+        \"rms\": 0.05,
+        \"sig\": 19,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375605000001,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375605000001,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051661\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375607100000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8747,
+    38.8355,
+    3.2,
+    -122.8747,
+    38.8355,
+    3.2
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8747,
+          38.8355,
+          3.2
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051661\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051661\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051661.geojson\",
+        \"dmin\": 0.00898315,
+        \"felt\": null,
+        \"gap\": 118.8,
+        \"ids\": \",nc72051661,\",
+        \"mag\": 3.371428571428571,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"12km ENE of Cloverdale, California\",
+        \"rms\": 0.05,
+        \"sig\": 19,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375605000001,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375605000001,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051661\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375607400000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8747,
+    38.8355,
+    3.2,
+    -122.8747,
+    38.8355,
+    3.2
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8747,
+          38.8355,
+          3.2
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051661\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051661\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051661.geojson\",
+        \"dmin\": 0.00898315,
+        \"felt\": null,
+        \"gap\": 118.8,
+        \"ids\": \",nc72051661,\",
+        \"mag\": 3.371428571428571,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"12km ENE of Cloverdale, California\",
+        \"rms\": 0.05,
+        \"sig\": 19,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375605000001,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375605000001,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051661\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375607700000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8747,
+    38.8355,
+    3.2,
+    -122.8747,
+    38.8355,
+    3.2
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8747,
+          38.8355,
+          3.2
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051661\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051661\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051661.geojson\",
+        \"dmin\": 0.00898315,
+        \"felt\": null,
+        \"gap\": 118.8,
+        \"ids\": \",nc72051661,\",
+        \"mag\": 3.371428571428571,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"12km ENE of Cloverdale, California\",
+        \"rms\": 0.05,
+        \"sig\": 19,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375605000001,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375605000001,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051661\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375608000000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8747,
+    38.8355,
+    3.2,
+    -122.8747,
+    38.8355,
+    3.2
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8747,
+          38.8355,
+          3.2
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051661\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051661\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051661.geojson\",
+        \"dmin\": 0.00898315,
+        \"felt\": null,
+        \"gap\": 118.8,
+        \"ids\": \",nc72051661,\",
+        \"mag\": 3.371428571428571,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"12km ENE of Cloverdale, California\",
+        \"rms\": 0.05,
+        \"sig\": 19,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375605000001,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375605000001,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051661\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375608300000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8747,
+    38.8355,
+    3.2,
+    -122.8747,
+    38.8355,
+    3.2
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8747,
+          38.8355,
+          3.2
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051661\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051661\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051661.geojson\",
+        \"dmin\": 0.00898315,
+        \"felt\": null,
+        \"gap\": 118.8,
+        \"ids\": \",nc72051661,\",
+        \"mag\": 3.371428571428571,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"12km ENE of Cloverdale, California\",
+        \"rms\": 0.05,
+        \"sig\": 19,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375605000001,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375605000001,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051661\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375608600000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}", "{
+  \"bbox\": [
+    -122.8747,
+    38.8355,
+    3.2,
+    -122.8747,
+    38.8355,
+    3.2
+  ],
+  \"features\": [
+    {
+      \"geometry\": {
+        \"coordinates\": [
+          -122.8747,
+          38.8355,
+          3.2
+        ],
+        \"type\": \"Point\"
+      },
+      \"id\": \"nc72051661\",
+      \"properties\": {
+        \"alert\": null,
+        \"cdi\": null,
+        \"code\": \"72051661\",
+        \"detail\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72051661.geojson\",
+        \"dmin\": 0.00898315,
+        \"felt\": null,
+        \"gap\": 118.8,
+        \"ids\": \",nc72051661,\",
+        \"mag\": 3.371428571428571,
+        \"magType\": \"Md\",
+        \"mmi\": null,
+        \"net\": \"nc\",
+        \"nst\": null,
+        \"place\": \"12km ENE of Cloverdale, California\",
+        \"rms\": 0.05,
+        \"sig\": 19,
+        \"sources\": \",nc,\",
+        \"status\": \"AUTOMATIC\",
+        \"time\": 1375605000001,
+        \"tsunami\": null,
+        \"type\": \"earthquake\",
+        \"types\": \",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,\",
+        \"tz\": -420,
+        \"updated\": 1375605000001,
+        \"url\": \"http://earthquake.usgs.gov/earthquakes/eventpage/nc72051661\"
+      },
+      \"type\": \"Feature\"
+    }
+  ],
+  \"metadata\": {
+    \"api\": \"1.0.9\",
+    \"count\": 1,
+    \"generated\": 1375608900000,
+    \"status\": 200,
+    \"title\": \"USGS All Earthquakes, Past Hour\",
+    \"url\": \"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?\"
+  },
+  \"type\": \"FeatureCollection\"
+}"]}, "metadata": {"name": "Peaceful Earth", "author": "acbart", "library": "SimpleEarthquake library", "contact": "acbart@vt.edu", "version": 1.0, "description": "Very few, weak earthquakes"}}

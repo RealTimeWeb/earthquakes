@@ -1,106 +1,101 @@
 package realtimeweb.earthquakeservice.domain;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
 
-import com.google.gson.Gson;
-import com.google.gson.JsonArray;
+
+
 
 /**
  * The longitudinal, latitudinal, and depth where the earthquake occurred.
  */
 public class Coordinate {
-	//For some unclear reason, these are stored as a list instead of a dictionary.
 	
-	
-	private double longitude;
-	private double latitude;
-	private double depth;
-	
-	
-	/**
-	 * The longitude (West-North) component.
-	
-	 * @return double
-	 */
-	public double getLongitude() {
-		return this.longitude;
-	}
-	
-	/**
-	 * 
-	 * @param longitude The longitude (West-North) component.
-	 */
-	public void setLongitude(double longitude) {
-		this.longitude = longitude;
-	}
-	
-	/**
-	 * The latitude (South-North) component.
-	
-	 * @return double
-	 */
-	public double getLatitude() {
-		return this.latitude;
-	}
-	
-	/**
-	 * 
-	 * @param latitude The latitude (South-North) component.
-	 */
-	public void setLatitude(double latitude) {
-		this.latitude = latitude;
-	}
-	
-	/**
-	 * The depth (closer or farther from the surface) component.
-	
-	 * @return double
-	 */
-	public double getDepth() {
-		return this.depth;
-	}
-	
-	/**
-	 * 
-	 * @param depth The depth (closer or farther from the surface) component.
-	 */
-	public void setDepth(double depth) {
-		this.depth = depth;
-	}
-	
-	
+    // For some unclear reason, these are stored as a list instead of a dictionary.
+    
+    private Double longitude;
+    private Double latitude;
+    private Double depth;
+    
+    
+    /*
+     * @return The longitude (West-North) component.
+     */
+    public Double getLongitude() {
+        return this.longitude;
+    }
+    
+    /*
+     * @param The longitude (West-North) component.
+     * @return Double
+     */
+    public void setLongitude(Double longitude) {
+        this.longitude = longitude;
+    }
+    
+    /*
+     * @return The latitude (South-North) component.
+     */
+    public Double getLatitude() {
+        return this.latitude;
+    }
+    
+    /*
+     * @param The latitude (South-North) component.
+     * @return Double
+     */
+    public void setLatitude(Double latitude) {
+        this.latitude = latitude;
+    }
+    
+    /*
+     * @return The depth (closer or farther from the surface) component.
+     */
+    public Double getDepth() {
+        return this.depth;
+    }
+    
+    /*
+     * @param The depth (closer or farther from the surface) component.
+     * @return Double
+     */
+    public void setDepth(Double depth) {
+        this.depth = depth;
+    }
+    
 	
 	/**
-	 * The longitudinal, latitudinal, and depth where the earthquake occurred.
+	 * Creates a string based representation of this Coordinate.
 	
 	 * @return String
 	 */
 	public String toString() {
-		return "Coordinate[" + longitude + ", " + latitude + ", " + depth + "]";
+		return "Coordinate[" +longitude+", "+latitude+", "+depth+"]";
 	}
 	
 	/**
-	 * Internal constructor to create a Coordinate from a Json representation.
-	 * @param json The raw json data that will be parsed.
-	 * @param gson The Gson parser. See <a href='https://code.google.com/p/google-gson/'>https://code.google.com/p/google-gson/</a> for more information.
+	 * Internal constructor to create a Coordinate from a json representation.
+	 * @param map The raw json data that will be parsed.
 	 * @return 
 	 */
-	public  Coordinate(JsonArray json, Gson gson) {
-		this.longitude = json.get(0).getAsDouble();
-		this.latitude = json.get(1).getAsDouble();
-		this.depth = json.get(2).getAsDouble();
-	}
-	
-	/**
-	 * Regular constructor to create a Coordinate.
-	 * @param longitude The longitude (West-North) component.
-	 * @param latitude The latitude (South-North) component.
-	 * @param depth The depth (closer or farther from the surface) component.
-	 * @return 
-	 */
-	public  Coordinate(double longitude, double latitude, double depth) {
-		this.longitude = longitude;
-		this.latitude = latitude;
-		this.depth = depth;
-	}
-	
+    public Coordinate(List<Object> raw) {
+        // TODO: Check that the data has the correct schema.
+        // NOTE: It's much safer to check the Map for fields than to catch a runtime exception.
+        try {
+            this.longitude = Double.parseDouble(raw.get(0).toString());
+            this.latitude = Double.parseDouble(raw.get(1).toString());
+            this.depth = Double.parseDouble(raw.get(2).toString());
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Coordinate; a field was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Coordinate; a field had the wrong structure.");
+    		e.printStackTrace();
+        }
+    
+	}	
 }
