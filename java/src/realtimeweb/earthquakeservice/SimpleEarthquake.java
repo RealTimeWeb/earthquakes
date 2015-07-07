@@ -35,28 +35,28 @@ public class SimpleEarthquake {
 	public static void main(String[] args) {
 		SimpleEarthquake simpleEarthquake = new SimpleEarthquake("e-violent-quakes.json");
 
+		for (Earthquake quake : simpleEarthquake.getEarthquakes("all", "week")) {
+			System.out.println("--- New Quake ---");
+			System.out.println(quake.getLocationDescription());
+			System.out.println(quake.getLocation());
+			System.out.println(quake.getMagnitude());
+		}
+
 		// The following pre-generated code demonstrates how you can
 		// use StickyWeb's EditableCache to create data files.
 		try {
 			// First, you create a new EditableCache, possibly passing in an
 			// existing cache to add to it
 			EditableCache recording = new EditableCache();
-			recording.addData(simpleEarthquake.getEarthquakesRequest("all", "week"));
-			Thread.sleep(5000);
-			recording.addData(simpleEarthquake.getEarthquakesRequest("all", "week"));
-			Thread.sleep(5000);
-			recording.addData(simpleEarthquake.getEarthquakesRequest("all", "week"));
-			recording.saveToStream(null);
-			
-			for (int i = 0; i < 100; i += 1) {
-				System.out.println(simpleEarthquake.getNewEarthquakes("all",
-						"hour").size());
-				Thread.sleep(100);
+			for (int i = 0; i < 5; i += 1) {
+				System.out.println("Adding another request.");
+				recording.addData(simpleEarthquake.getEarthquakesRequest("all", "week"));
+				Thread.sleep(1000);
 			}
 			/*
 			 * // First you get a request object StickyWebRequest request =
-			 * SimpleEarthquake.getEarthquakesRequest(...); // Then you can get
-			 * the request's hash and value, and add it to the EditableCache
+			 * SimpleEarthquake.getEarthquakesRequest(...);
+			 * Then you can get the request's hash and value, and add it to the EditableCache
 			 * recording.addData(request.getHashedRequest(),
 			 * request.execute().asText());
 			 */
@@ -64,7 +64,7 @@ public class SimpleEarthquake {
 			recording.saveToStream(new FileOutputStream("cache.json"));
 		} catch (StickyWebDataSourceNotFoundException e) {
 			System.err
-					.println("The given FileStream was not able to be found.");
+					.println("The given FileStream was not able to be found. Reason: "+e.getMessage());
 		} catch (StickyWebDataSourceParseException e) {
 			System.err
 					.println("The given FileStream could not be parsed; possibly the structure is incorrect.");
