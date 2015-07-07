@@ -1,7 +1,2 @@
+realtimeweb.earthquakeservice
 realtimeweb.earthquakeservice.domain
-realtimeweb.earthquakeservice.exceptions
-realtimeweb.earthquakeservice.json
-realtimeweb.earthquakeservice.main
-realtimeweb.earthquakeservice.regular
-realtimeweb.earthquakeservice.structured
-realtimeweb.earthquakeservice.util
