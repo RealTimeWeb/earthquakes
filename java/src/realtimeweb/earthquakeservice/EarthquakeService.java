@@ -27,15 +27,16 @@ import realtimeweb.stickyweb.exceptions.StickyWebNotInCacheException;
 /**
  * Get the latest information about earthquakes around the world.
  */
-public class SimpleEarthquake {
+public class EarthquakeService {
 	private StickyWeb connection;
 	private boolean online;
 	private HashSet<String> seen_quakes;
 
 	public static void main(String[] args) {
-		SimpleEarthquake simpleEarthquake = new SimpleEarthquake("e-violent-quakes.json");
+		EarthquakeService service = new EarthquakeService(
+				"e-violent-quakes.json");
 
-		for (Earthquake quake : simpleEarthquake.getEarthquakes("all", "week")) {
+		for (Earthquake quake : service.getEarthquakes("all", "week")) {
 			System.out.println("--- New Quake ---");
 			System.out.println(quake.getLocationDescription());
 			System.out.println(quake.getLocation());
@@ -50,13 +51,13 @@ public class SimpleEarthquake {
 			EditableCache recording = new EditableCache();
 			for (int i = 0; i < 5; i += 1) {
 				System.out.println("Adding another request.");
-				recording.addData(simpleEarthquake.getEarthquakesRequest("all", "week"));
+				recording.addData(service.getEarthquakesRequest("all", "week"));
 				Thread.sleep(1000);
 			}
 			/*
 			 * // First you get a request object StickyWebRequest request =
-			 * SimpleEarthquake.getEarthquakesRequest(...);
-			 * Then you can get the request's hash and value, and add it to the EditableCache
+			 * SimpleEarthquake.getEarthquakesRequest(...); Then you can get the
+			 * request's hash and value, and add it to the EditableCache
 			 * recording.addData(request.getHashedRequest(),
 			 * request.execute().asText());
 			 */
@@ -64,7 +65,8 @@ public class SimpleEarthquake {
 			recording.saveToStream(new FileOutputStream("cache.json"));
 		} catch (StickyWebDataSourceNotFoundException e) {
 			System.err
-					.println("The given FileStream was not able to be found. Reason: "+e.getMessage());
+					.println("The given FileStream was not able to be found. Reason: "
+							+ e.getMessage());
 		} catch (StickyWebDataSourceParseException e) {
 			System.err
 					.println("The given FileStream could not be parsed; possibly the structure is incorrect.");
@@ -90,13 +92,16 @@ public class SimpleEarthquake {
 		} catch (StickyWebInvalidPostArguments e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} catch (EarthquakeException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 	}
 
 	/**
 	 * Create a new, online connection to the service
 	 */
-	public SimpleEarthquake() {
+	public EarthquakeService() {
 		this.online = true;
 		this.initializeSeenQuakes();
 		try {
@@ -116,7 +121,7 @@ public class SimpleEarthquake {
 	 * @param cache
 	 *            The filename for this cache.
 	 */
-	public SimpleEarthquake(String cache) {
+	public EarthquakeService(String cache) {
 		try {
 			this.online = false;
 			this.initializeSeenQuakes();
@@ -167,7 +172,13 @@ public class SimpleEarthquake {
 				|| time.equalsIgnoreCase("month");
 	}
 
-	private StickyWebRequest getEarthquakesRequest(String threshold, String time) {
+	private StickyWebRequest getEarthquakesRequest(String threshold, String time) throws EarthquakeException {
+		if (!isValidTime(time)) {
+			throw new EarthquakeException("Invalid time. Must be one of 'hour', 'day', 'week', or 'month'.");
+		}
+		if (!isValidThreshold(threshold)) {
+			throw new EarthquakeException("Invalid threshold. Must be one of 'significant', 'all', '4.5', '2.5', or '1.0'.");
+		}
 		try {
 			final String url = String
 					.format("http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/%s_%s.geojson",
@@ -240,10 +251,30 @@ public class SimpleEarthquake {
 			System.err
 					.println("The response from the server couldn't be understood.");
 
+		} catch (EarthquakeException e) {
+			System.err.println(e.getMessage());
 		}
 		return null;
 	}
 
+	/**
+	 * Alternative version that only returns *New* earthquakes, ones that
+	 * haven't been reported since the last time this function was called.
+	 * 
+	 * @param threshold
+	 *            A string indicating what kind of earthquakes to report. Must
+	 *            be either "significant" (only significant earthquakes), "all"
+	 *            (all earthquakes, regardless of significance), "4.5", "2.5",
+	 *            or "1.0". Note that for the last three, all earthquakes at and
+	 *            above that level will be reported.
+	 * @param time
+	 *            A string indicating the time range of earthquakes to report.
+	 *            Must be either "hour" (only earthquakes in the past hour),
+	 *            "day" (only earthquakes that happened today), "week" (only
+	 *            earthquakes that happened in the past 7 days), or "month"
+	 *            (only earthquakes that happened in the past 30 days).
+	 * @return
+	 */
 	public ArrayList<Earthquake> getNewEarthquakes(String threshold, String time) {
 		ArrayList<Earthquake> new_quakes = getEarthquakes(threshold, time);
 		ArrayList<Earthquake> result_quakes = new ArrayList<Earthquake>();

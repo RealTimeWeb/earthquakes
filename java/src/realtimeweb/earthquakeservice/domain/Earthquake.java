@@ -26,14 +26,14 @@ public class Earthquake {
     private Long time;
     
     
-    /*
+    /**
      * @return The location of the earthquake.
      */
     public Coordinate getLocation() {
         return this.location;
     }
     
-    /*
+    /**
      * @param The location of the earthquake.
      * @return Coordinate
      */
@@ -41,14 +41,14 @@ public class Earthquake {
         this.location = location;
     }
     
-    /*
+    /**
      * @return The magnitude of the earthquake on the Richter Scale.
      */
     public Double getMagnitude() {
         return this.magnitude;
     }
     
-    /*
+    /**
      * @param The magnitude of the earthquake on the Richter Scale.
      * @return Double
      */
@@ -56,14 +56,14 @@ public class Earthquake {
         this.magnitude = magnitude;
     }
     
-    /*
+    /**
      * @return A human-readable description of the location.
      */
     public String getLocationDescription() {
         return this.locationDescription;
     }
     
-    /*
+    /**
      * @param A human-readable description of the location.
      * @return String
      */
@@ -71,14 +71,14 @@ public class Earthquake {
         this.locationDescription = locationDescription;
     }
     
-    /*
+    /**
      * @return A uniquely identifying id for this earthquake.
      */
     public String getId() {
         return this.id;
     }
     
-    /*
+    /**
      * @param A uniquely identifying id for this earthquake.
      * @return String
      */
@@ -86,14 +86,14 @@ public class Earthquake {
         this.id = id;
     }
     
-    /*
+    /**
      * @return The epoch time (http://en.wikipedia.org/wiki/Unix_time) when this earthquake occurred.
      */
     public Long getTime() {
         return this.time;
     }
     
-    /*
+    /**
      * @param The epoch time (http://en.wikipedia.org/wiki/Unix_time) when this earthquake occurred.
      * @return Long
      */

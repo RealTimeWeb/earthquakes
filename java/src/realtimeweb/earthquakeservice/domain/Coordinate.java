@@ -22,14 +22,14 @@ public class Coordinate {
     private Double depth;
     
     
-    /*
+    /**
      * @return The longitude (West-North) component.
      */
     public Double getLongitude() {
         return this.longitude;
     }
     
-    /*
+    /**
      * @param The longitude (West-North) component.
      * @return Double
      */
@@ -37,14 +37,14 @@ public class Coordinate {
         this.longitude = longitude;
     }
     
-    /*
+    /**
      * @return The latitude (South-North) component.
      */
     public Double getLatitude() {
         return this.latitude;
     }
     
-    /*
+    /**
      * @param The latitude (South-North) component.
      * @return Double
      */
@@ -52,14 +52,14 @@ public class Coordinate {
         this.latitude = latitude;
     }
     
-    /*
+    /**
      * @return The depth (closer or farther from the surface) component.
      */
     public Double getDepth() {
         return this.depth;
     }
     
-    /*
+    /**
      * @param The depth (closer or farther from the surface) component.
      * @return Double
      */

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<project name="Build Simple Earthquake" basedir="." default="dist">
+<project name="Build Earthquake" basedir="." default="dist">
 	<description>
-		A build file to generate a distributable .jar for the RealTimeWeb Simple Earthquake.
+		A build file to generate a distributable .jar for the CORGIS Earthquake.
 	</description>
 	
 	<property name="src" location="src"/>
@@ -39,7 +39,7 @@
 		      sourcepath='src'
 		      packagenames='*.*' 
 		      destdir='${docs}'
-		      windowtitle='Simple Earthquake: version ${ver}'
+		      windowtitle='Earthquake: version ${ver}'
 		      noqualifier='java.*:javax.*:com.sun.*'   
 		      linksource='true'
 		    />
@@ -50,20 +50,20 @@
 	    <mkdir dir="${dist}"/>
 
 	    <!-- Put everything in ${build} into the simpleearthquake-${DSTAMP}.jar file -->
-	    <jar jarfile="${dist}/simpleearthquake-${ver}.jar" basedir="${bin}">
+	    <jar jarfile="${dist}/EarthquakeService-${ver}.jar" basedir="${bin}">
 	    	<fileset dir="bin" includes="bin/*.class" />
 			<zipgroupfileset dir="libs/" includes="*.jar" />
 		</jar>
 		
 		<!-- Put everything in ${build} and ${docs} into the simpleearthquake-doc-${DSTAMP}.jar file -->
-		<jar jarfile="${dist}/simpleearthquake-doc-${ver}.jar" basedir="${bin}">
+		<jar jarfile="${dist}/EarthquakeService-doc-${ver}.jar" basedir="${bin}">
 	    	<fileset dir="bin" includes="bin/*.class" />
 			<fileset dir="docs" includes="**" />
 			<zipgroupfileset dir="libs/" includes="*.jar" />
 		</jar>
 		
 		<!-- Put everything in ${build} and ${src} into the simpleearthquake-src-${DSTAMP}.jar file -->
-		<jar jarfile="${dist}/simpleearthquake-src-${ver}.jar" basedir="${bin}">
+		<jar jarfile="${dist}/EarthquakeService-src-${ver}.jar" basedir="${bin}">
 	    	<fileset dir="bin" includes="bin/*.class" />
 			<fileset dir="src" includes="**" />
 			<zipgroupfileset dir="libs/" includes="*.jar" />
