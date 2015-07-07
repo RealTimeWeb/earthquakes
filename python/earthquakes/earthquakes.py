@@ -1,5 +1,6 @@
 _USE_CLASSES = False
-_START_CONNECTED = True
+_START_CONNECTED = False
+_VERSION = '6'
 
 import sys
 PYTHON_3 = sys.version_info >= (3, 0)
@@ -98,6 +99,7 @@ def _from_json(data):
     `str` are used instead of bytes.
     """
     return _recursively_convert_unicode_to_str(json.loads(data))
+
 ################################################################################
 # Cache
 ################################################################################
@@ -214,11 +216,6 @@ def _save_cache(filename="cache.json"):
     """
     with open(filename, 'w') as f:
         json.dump({"data": _CACHE, "metadata": ""}, f)
-        
-if _START_CONNECTED:
-    connect()
-else:
-    disconnect()
         
 ################################################################################
 # Exceptions
@@ -598,6 +595,29 @@ def get_report(time='hour', threshold='significant'):
             raise USGSException("No response from the server.")
         else:
             raise USGSException("No data was in the cache for this time and threshold ('{}', '{}').".format(time, threshold))
+            
+'''# Generate fake reports for small data
+ALL_EARTHQUAKES = [
+    1.0, 4.7, 2.3, 5.3, 1.2, 6.0, 5.4, 1.4, 1.7, 5.4, 2.2, 4.6, 3.4, 2.3,
+    4.7, 2.4, 1.0, 1.5, 1.7, 2.5, 7.8, 2.2, 4.5, 7.8, 6.4, 8.1, 7.3, 4.2,
+    3.2, 1.7, 1.5, 1.4, 3.2, 1.9, 2.7
+]
+EARTHQUAKE_RESULTS = {('hour', 'significant'): filter(lambda x: 3.5 > x, ALL_EARTHQUAKES[:1]),
+        ('day', 'significant'): filter(lambda x: 3.5 > x, ALL_EARTHQUAKES[:3]),
+        ('week', 'significant'): filter(lambda x: 3.5 > x, ALL_EARTHQUAKES[:10]),
+        ('month', 'significant'): filter(lambda x: 3.5 > x, ALL_EARTHQUAKES),
+        ('hour', 'all'): ALL_EARTHQUAKES[:1],
+        ('day', 'all'): ALL_EARTHQUAKES[:3],
+        ('week', 'all'): ALL_EARTHQUAKES[:10],
+        ('month', 'all'): ALL_EARTHQUAKES}
+def get_magnitudes(time='hour', threshold='significant'):
+    if threshold not in THRESHOLDS:
+        raise USGSException('Unknown threshold: "{}" (must be either "significant", "all", "4.5", "2.5", or "1.0")'.format(threshold))
+    if time not in TIMES:
+        raise USGSException('Unknown time: "{}" (must be either "hour", "day", "week", "month")'.format(time))
+    if (time, threshold) in EARTHQUAKE_RESULTS:
+        return EARTHQUAKE_RESULTS[(time, threshold)]
+    raise USGSException("No data was in the cache for this time and threshold ('{}', '{}').".format(time, threshold))'''
     
 _load_from_string(zlib.decompress(base64.b64decode(
 	'''eJzsfWuT20aS7V9h+DOEqfdjv3lkz9oztsfXmrFj487GBtVNq2mxyb7sbmnkjfnvtxI'''
@@ -24535,3 +24555,8 @@ _load_from_string(zlib.decompress(base64.b64decode(
 	'''9B46ra9OiTxXD/mX/scv7vPb2+f/dH9Z28a4/7n6QrmzwzwfDxv0toX+olqtNGu0d4t'''
 	'''R7gfOf/njjbvuzRt3h2v/Mt/86ebNmz/+D+1Mg68='''
 )))
+
+if _START_CONNECTED:
+    connect()
+else:
+    disconnect()

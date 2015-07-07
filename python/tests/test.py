@@ -16,9 +16,11 @@ class TestEarthquakesOnline(unittest.TestCase):
                 while report is None and attempts < 10:
                     try:
                         report = earthquakes.get_report(time, threshold)
+                        mags = earthquakes.get_magnitudes(time, threshold)
                     except earthquakes.USGSException:
                         print("Possible connection error, retrying")
                         attempts += 1
+                self.assertIsInstance(mags, list)
                 self.assertIsInstance(report, dict, msg='input {}, {}'.format(time, threshold))
                 self.assertIsInstance(report['title'], str, msg='input {}, {}'.format(time, threshold))
                 self.assertIsInstance(report['area'], dict, msg='input {}, {}'.format(time, threshold))
